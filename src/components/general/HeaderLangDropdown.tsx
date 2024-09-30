@@ -26,7 +26,7 @@ const HeaderLangDropdown = () => {
     <>
       <div className="relative bg-[#4D5C69]/60 border-[.25px] rounded-lg border-white/50">
         <button
-          className="text-white font-medium text-lg flex items-center gap-2 px-4 py-2"
+          className="text-white font-medium ~text-sm/lg flex items-center ~gap-2/4 ~px-2/4 py-2"
           onClick={() => {
             setIsExpanded(prev => !prev);
           }}>
@@ -35,9 +35,9 @@ const HeaderLangDropdown = () => {
             alt="US Flag"
             width={32}
             height={32}
-            className="w-8 h-8"
+            className="w-6 h-6 lg:w-8 lg:h-8"
           />
-          <span className="ml-2">{languages[currentLang].language}</span>
+          <span>{languages[currentLang].language}</span>
           <FaChevronDown
             className={`${
               isExpanded ? "transform rotate-180" : ""
@@ -54,7 +54,7 @@ const HeaderLangDropdown = () => {
             {Object.keys(languages).map((lang: string) => (
               <button
                 key={lang}
-                className="text-white font-medium text-lg flex items-center gap-2 px-4 py-2"
+                className="text-white font-medium ~text-sm/lg flex items-center ~gap-2/4 px-4 py-2"
                 onClick={() => {
                   setCurrentLang(lang as keyof typeof languages);
                   setIsExpanded(false);
@@ -66,7 +66,7 @@ const HeaderLangDropdown = () => {
                   } Flag`}
                   width={32}
                   height={32}
-                  className="w-8 h-8"
+                  className="w-4 h-4 lg:w-8 lg:h-8"
                 />
                 <span>
                   {languages[lang as keyof typeof languages].language}

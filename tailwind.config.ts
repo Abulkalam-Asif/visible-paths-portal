@@ -14,6 +14,9 @@ const config: Config = {
     screens,
     fontSize,
     extend: {
+      screens: {
+        xs: "25rem",
+      },
       backgroundImage: {
         main: "url('/images/mainBg.webp')",
       },
