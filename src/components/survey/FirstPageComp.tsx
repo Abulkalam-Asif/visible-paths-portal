@@ -3,9 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import firstPageCarImg from "../../assets/survey/firstPageCar.svg";
 
-type Props = {};
-
-const FirstPageComp = (props: Props) => {
+const FirstPageComp = () => {
   const router = useRouter();
 
   // Function to handle the click and add the query in the URL
