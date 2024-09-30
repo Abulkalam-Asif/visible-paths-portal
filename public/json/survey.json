@@ -1,0 +1,239 @@
+[
+  {
+    "section": "Financial Behaviors",
+    "questions": [
+      {
+        "question": "How often do you create and stick to a budget?",
+        "options": ["Always", "Most of the time", "Occasionally", "Rarely", "Never"]
+      },
+      {
+        "question": "When you receive income (e.g., paycheck, allowance), what do you do first?",
+        "options": [
+          "Save a portion",
+          "Pay off any debts",
+          "Spend on necessities",
+          "Spend on wants",
+          "Don't have a plan"
+        ]
+      },
+      {
+        "question": "How often do you review your financial statements (bank, credit card, etc.)?",
+        "options": ["Weekly", "Monthly", "Every few months", "Rarely", "Never"]
+      },
+      {
+        "question": "What is your approach to saving money?",
+        "options": [
+          "I have a strict savings plan and follow it",
+          "I save when I can, but without a set plan",
+          "I rarely save",
+          "I don't save at all",
+          "I save only when I have excess money"
+        ]
+      }
+    ]
+  },
+  {
+    "section": "Attitudes Towards Money",
+    "questions": [
+      {
+        "question": "How do you feel when you think about your current financial situation?",
+        "options": ["Very confident", "Somewhat confident", "Neutral", "Somewhat anxious", "Very anxious"]
+      },
+      {
+        "question": "How do you feel about taking on debt (e.g., loans, credit cards)?",
+        "options": [
+          "Comfortable, if managed well",
+          "Uncomfortable, but sometimes necessary",
+          "Avoid debt whenever possible",
+          "Indifferent",
+          "I don't think about it much"
+        ]
+      },
+      {
+        "question": "What is your primary financial goal right now?",
+        "options": [
+          "Building an emergency fund",
+          "Paying off debt",
+          "Saving for a big purchase (e.g., car, house)",
+          "Investing for the future",
+          "Just getting by day-to-day"
+        ]
+      }
+    ]
+  },
+  {
+    "section": "Risk Tolerance",
+    "questions": [
+      {
+        "question": "How would you describe your investment style?",
+        "options": [
+          "Aggressive – I'm willing to take high risks for potential high rewards",
+          "Moderate – I prefer a balanced approach with moderate risks",
+          "Conservative – I avoid risks and prefer safer, lower returns",
+          "I don't invest",
+          "I'm not sure what my investment style is"
+        ]
+      },
+      {
+        "question": "If you lost a significant portion of your investment, how would you react?",
+        "options": [
+          "Stay calm and wait for recovery",
+          "Re-evaluate my strategy but stay invested",
+          "Reduce my exposure to riskier assets",
+          "Withdraw my investments to avoid further loss",
+          "I wouldn't know what to do"
+        ]
+      },
+      {
+        "question": "What do you prioritize when making financial decisions?",
+        "options": [
+          "Maximizing returns",
+          "Balancing risk and reward",
+          "Preserving capital",
+          "Minimizing risk",
+          "I don't have a clear priority"
+        ]
+      }
+    ]
+  },
+  {
+    "section": "Financial Goals",
+    "questions": [
+      {
+        "question": "Where do you see yourself financially in the next 5 years?",
+        "options": [
+          "Debt-free with significant savings",
+          "Owning a home or other large asset",
+          "Having a solid investment portfolio",
+          "Financially stable with some savings",
+          "Still working on financial stability"
+        ]
+      },
+      {
+        "question": "What is your primary motivation for managing your finances?",
+        "options": [
+          "Achieving financial independence",
+          "Providing for family",
+          "Enjoying life experiences",
+          "Preparing for retirement",
+          "Reducing financial stress"
+        ]
+      },
+      {
+        "question": "Which of the following best describes your approach to long-term financial planning?",
+        "options": [
+          "I have a detailed plan and regularly update it",
+          "I have a general idea but need to refine it",
+          "I've thought about it but haven't planned much",
+          "I haven't started planning",
+          "I don't think about long-term planning"
+        ]
+      }
+    ]
+  },
+  {
+    "section": "Financial Knowledge and Education",
+    "questions": [
+      {
+        "question": "How would you rate your knowledge of personal finance?",
+        "options": [
+          "Expert – I understand most financial concepts and manage my finances well.",
+          "Knowledgeable – I understand basic financial concepts but could learn more.",
+          "Average – I have some understanding but need guidance on many aspects.",
+          "Limited – I struggle with understanding financial concepts.",
+          "None – I have no understanding of financial concepts."
+        ]
+      },
+      {
+        "question": "Where do you primarily learn about financial matters?",
+        "options": [
+          "Family or friends",
+          "Online resources or blogs",
+          "Financial advisors or professionals",
+          "Social media or influencers",
+          "I don't actively seek financial information"
+        ]
+      },
+      {
+        "question": "How confident are you in making financial decisions on your own?",
+        "options": [
+          "Very confident",
+          "Somewhat confident",
+          "Neutral",
+          "Not very confident",
+          "Not confident at all"
+        ]
+      }
+    ]
+  },
+  {
+    "section": "Financial Challenges",
+    "questions": [
+      {
+        "question": "What is the biggest financial challenge you currently face?",
+        "options": [
+          "Managing debt",
+          "Saving enough money",
+          "Understanding investments",
+          "Budgeting effectively",
+          "Other (please specify)"
+        ]
+      },
+      {
+        "question": "How often do unexpected expenses disrupt your financial plans?",
+        "options": [
+          "Frequently",
+          "Occasionally",
+          "Rarely",
+          "Never",
+          "I don't have a financial plan"
+        ]
+      },
+      {
+        "question": "How do you typically handle financial emergencies?",
+        "options": [
+          "Use savings",
+          "Use credit cards",
+          "Borrow from family/friends",
+          "Take out a loan",
+          "I'm not sure what I would do"
+        ]
+      }
+    ]
+  },
+  {
+    "section": "Financial Tools & Resources",
+    "questions": [
+      {
+        "question": "Which financial tools do you currently use to manage your money?",
+        "options": [
+          "Budgeting apps",
+          "Investment platforms",
+          "Savings accounts with automated transfers",
+          "Financial planning software",
+          "None of the above"
+        ]
+      },
+      {
+        "question": "What type of financial advice do you find most useful?",
+        "options": [
+          "Personalized, one-on-one advice",
+          "General advice through articles or blogs",
+          "Interactive tools or simulators",
+          "Group workshops or classes",
+          "I don't seek financial advice"
+        ]
+      },
+      {
+        "question": "How likely are you to seek professional financial advice for major decisions?",
+        "options": [
+          "Very likely",
+          "Somewhat likely",
+          "Neutral",
+          "Unlikely",
+          "Very unlikely"
+        ]
+      }
+    ]
+  }
+]
