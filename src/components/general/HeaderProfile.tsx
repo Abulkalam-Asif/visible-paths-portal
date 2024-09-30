@@ -6,8 +6,8 @@ const HeaderProfile = () => {
   return (
     <>
       <div className="bg-[#4D5C69]/60 border-[.25px] rounded-lg border-white/50">
-        <button className="text-white font-bold text-lg flex items-center gap-2 px-4 py-2">
-          <div className="w-8 h-8 rounded-full overflow-hidden">
+        <button className="text-white font-bold ~text-sm/lg flex items-center ~gap-2/4 ~px-2/4 py-2">
+          <div className="w-6 h-6 rounded-full overflow-hidden lg:sw-8 lg:sh-8">
             <Image
               src="/temp/profile.png"
               alt="User profile"
