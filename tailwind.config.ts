@@ -19,10 +19,17 @@ const config: Config = {
       },
       backgroundImage: {
         main: "url('/images/mainBg.webp')",
+        survey: "url('/images/surveyBg.webp')",
       },
       transitionProperty: {
         "grid-rows": "grid-template-rows",
         padding: "padding",
+      },
+      colors: {
+        customRed: "#B22234",  // Add your custom color here
+      },
+      backdropBlur: {
+        custom: "43.70159149169922px",  // Your custom blur value
       },
     },
   },
