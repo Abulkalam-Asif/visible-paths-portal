@@ -1,7 +1,7 @@
 "use client";
-import { usFlagIcon } from "@/assets/images";
+import { esFlagIcon, frFlagIcon, usFlagIcon } from "@/assets/images";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 
 const languages = {
@@ -11,20 +11,37 @@ const languages = {
   },
   es: {
     language: "Español",
-    flagIcon: usFlagIcon,
+    flagIcon: esFlagIcon,
   },
   fr: {
     language: "Français",
-    flagIcon: usFlagIcon,
+    flagIcon: frFlagIcon,
   },
 };
 
 const HeaderLangDropdown = () => {
   const [currentLang, setCurrentLang] = useState<keyof typeof languages>("us");
   const [isExpanded, setIsExpanded] = useState(false);
+  const dropownRef = useRef<HTMLDivElement>(null);
+
+  const handleClickOutside = (e: MouseEvent) => {
+    if (dropownRef.current && !dropownRef.current.contains(e.target as Node)) {
+      setIsExpanded(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <>
-      <div className="relative bg-[#4D5C69]/60 border-[.25px] rounded-lg border-white/50">
+      <div
+        ref={dropownRef}
+        className="relative bg-[#4D5C69]/60 border-[.25px] rounded-lg border-white/50">
         <button
           className="text-white font-medium ~text-sm/lg flex items-center ~gap-2/4 ~px-2/4 py-2"
           onClick={() => {
