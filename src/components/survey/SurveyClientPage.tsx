@@ -3,7 +3,6 @@ import React from "react";
 import FirstPageComp from "./FirstPageComp";
 import { useRouter, useSearchParams } from "next/navigation";
 import Data from "../../../public/json/survey.json";
-import Navigators from "./Navigators";
 import FormComp from "./FormComp";
 import SecondPageCom from "./SecondPageCom";
 
