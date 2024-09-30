@@ -4,9 +4,7 @@ import Image from "next/image";
 import Navigators from "./Navigators";
 import { useRouter } from "next/navigation";
 
-type Props = {};
-
-const SecondPageCom = (props: Props) => {
+const SecondPageCom = () => {
   const router = useRouter();
   const handleNext = () => {
     router.push("/survey?section=0&question=0");
