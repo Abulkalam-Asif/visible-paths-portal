@@ -19,10 +19,10 @@ const FirstPageComp = () => {
             <h1 className="text-center text-customRed p-5 text-2xl md:text-4xl">
               DISCOVER YOUR FINANCIAL FUNCTIONALITY
             </h1>
-            <p className="shadow-[0px_0px_14.57px_0px_rgba(0,0,0,0.2)] text-xl backdrop-blur-custom rounded-md m-2 text-center px-4">
+            <div className="shadow-[0px_0px_14.57px_0px_rgba(0,0,0,0.2)] text-xl backdrop-blur-custom rounded-md m-2 text-center px-4">
               <p>Unlock your financial potential with personalized insights.</p>
               <p>This survey will take approximately 10 minutes to complete</p>
-            </p>
+            </div>
             <div className="w-full flex justify-center">
               <button
                 onClick={startSurvey}
