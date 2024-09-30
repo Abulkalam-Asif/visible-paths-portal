@@ -45,7 +45,7 @@ const HeaderLangDropdown = () => {
           />
         </button>
         <div
-          className={`absolute top-full bg-[#4D5C69]/60 translate-y-2 left-0 grid ${
+          className={`absolute z-10 top-full bg-[#4D5C69]/60 translate-y-2 left-0 grid ${
             isExpanded
               ? "grid-rows-[1fr] py-2 border-[.25px] border-white/50"
               : "grid-rows-[0fr]"
