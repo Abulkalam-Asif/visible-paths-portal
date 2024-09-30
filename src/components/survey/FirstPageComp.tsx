@@ -2,9 +2,7 @@ import React from "react";
 import Image from "next/image";
 import firstPageCarImg  from "../../assets/survey/firstPageCar.svg";
 
-type Props = {};
-
-const FirstPageComp = (props: Props) => {
+const FirstPageComp = () => {
   return (
     <section className="min-h-screen h-full bg-survey bg-no-repeat bg-top bg-cover">
       <div className="max-w-7xl h-full mx-auto sm:flex justify-between ~px-4/12 pb-4 ~/md:~pt-32/40 lg:pt-22">
