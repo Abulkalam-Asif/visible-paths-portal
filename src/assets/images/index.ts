@@ -9,3 +9,16 @@ export { default as circleBlackImg } from "./home/circleBlack.svg";
 export { default as circleOrangeImg } from "./home/circleOrange.svg";
 export { default as circleRedImg } from "./home/circleRed.svg";
 export { default as homeCarImg } from "./home/homeCar.webp";
+
+
+// Survey
+export {default as Section0Completion} from "../survey/Section0CompletionRoadMap.svg"
+export {default as Section1Completion} from "../survey/Section1CompletionRoadMap.svg"
+export {default as Section2Completion} from "../survey/Section2CompletionRoadMap.svg"
+export {default as Section3Completion} from "../survey/Section3CompletionRoadMap.svg"
+export {default as Section4Completion} from "../survey/Section4CompletionRoadMap.svg"
+export {default as Section5Completion} from "../survey/Section5CompletionRoadMap.svg"
+export {default as Section6Completion} from "../survey/Section6CompletionRoadMap.svg"
+export {default as Section7Completion} from "../survey/Section7CompletionRoadMap.svg"
+export {default as Section8Completion} from "../survey/Section8CompletionRoadMap.svg"
+
