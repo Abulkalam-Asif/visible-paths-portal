@@ -1,8 +1,6 @@
 import React from "react";
 import TipsCard from "./TipsCard";
 
-type Props = {};
-
 const personalizedtips = [
   {
     heading: "Budgeting Tip",
@@ -44,7 +42,7 @@ const financialfurneytips = [
   },
 ];
 
-const ResultsGridCard = (props: Props) => {
+const ResultsGridCard = () => {
   return (
     <div className="bg-white opacity-85 w-full p-4 rounded-lg flex flex-col gap-10">
       <div className="flex flex-col gap-7 ">

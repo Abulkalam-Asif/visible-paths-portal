@@ -1,9 +1,7 @@
 import React from 'react'
 import SurveyResultClientPage from "../../../components/survey/results/SurveyResultClientPage"
 
-type Props = {}
-
-const Results = (props: Props) => {
+const Results = () => {
   return (
     <div>
         <SurveyResultClientPage/>

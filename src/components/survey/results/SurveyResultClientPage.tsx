@@ -3,9 +3,7 @@ import HeadCard from "./HeadCard";
 import ResultGridCard from "./ResultsGridCard";
 import { JP } from "@/assets/images";
 
-type Props = {};
-
-const SurveyResultClientPage = (props: Props) => {
+const SurveyResultClientPage = () => {
   return (
     <>
       <section className="min-h-screen h-full bg-surveyResult bg-no-repeat bg-bottom bg-cover">

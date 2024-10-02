@@ -1,12 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import firstPageCarImg from "../../assets/survey/firstPageCar.svg";
 
 const FinalPageComp = () => {
   const router = useRouter();
-  const params = useSearchParams();
-  const myParams = new URLSearchParams(params);
 
   const ResultRoute = () => {
     router.push("/survey/results");
