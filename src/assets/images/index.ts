@@ -27,3 +27,9 @@ export {default as Section8Completion} from "../survey/Section8CompletionRoadMap
 export {default as JP} from "../survey/results/JP.webp"
 export {default as TipsBoxIcon} from "../survey/results/TipsBoxIcon.svg"
 
+
+//finance
+export {default as financeFirstPageIcon} from "../finance/financeFirstPageLoanIcon.svg"
+export {default as financeFirstPageCash} from "../finance/financeFirstPageCash.svg"
+export {default as financeFirstPageLease} from "../finance/financeFirstPageLease.svg"
+
