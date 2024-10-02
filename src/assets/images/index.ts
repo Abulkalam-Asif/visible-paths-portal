@@ -22,3 +22,8 @@ export {default as Section6Completion} from "../survey/Section6CompletionRoadMap
 export {default as Section7Completion} from "../survey/Section7CompletionRoadMap.svg"
 export {default as Section8Completion} from "../survey/Section8CompletionRoadMap.svg"
 
+
+// Survey Results
+export {default as JP} from "../survey/results/JP.webp"
+export {default as TipsBoxIcon} from "../survey/results/TipsBoxIcon.svg"
+

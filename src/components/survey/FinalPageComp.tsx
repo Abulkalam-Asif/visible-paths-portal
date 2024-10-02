@@ -8,12 +8,10 @@ const FinalPageComp = () => {
   const params = useSearchParams();
   const myParams = new URLSearchParams(params);
 
-  // Function to handle the click and add the query in the URL
-  const startSurvey = () => {
-    // Adding query params for the first section and first question
-    myParams.set("section", "0");
-    router.push(`/survey?${myParams.toString()}`);
+  const ResultRoute = () => {
+    router.push("/survey/results");
   };
+
   return (
     <section className="min-h-screen h-full bg-survey bg-no-repeat bg-bottom bg-cover">
       <div className="max-w-7xl h-full mx-auto sm:flex justify-between ~px-4/12 pb-4 ~/md:~pt-32/40 lg:pt-22">
@@ -28,7 +26,7 @@ const FinalPageComp = () => {
             </div>
             <div className="w-full flex justify-center">
               <button
-                onClick={startSurvey}
+                onClick={ResultRoute}
                 className="bg-customRed m-3 w-2/3 px-4 py-2 rounded-md text-white">
                 LET’S DIVE IN!
               </button>
