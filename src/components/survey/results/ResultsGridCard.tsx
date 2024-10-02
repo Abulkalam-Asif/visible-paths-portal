@@ -52,7 +52,7 @@ const ResultsGridCard = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
           {personalizedtips.map((tip, index) => {
             return (
-              <TipsCard title={tip.heading} description={tip.description} />
+              <TipsCard key={index} title={tip.heading} description={tip.description} />
             );
           })}
         </div>
