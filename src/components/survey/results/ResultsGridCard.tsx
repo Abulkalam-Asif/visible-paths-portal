@@ -64,7 +64,7 @@ const ResultsGridCard = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {financialfurneytips.map((tip, index) => {
             return (
-              <TipsCard title={tip.heading} description={tip.description} />
+              <TipsCard key={index} title={tip.heading} description={tip.description} />
             );
           })}
         </div>
