@@ -1,8 +1,6 @@
 import React from "react";
 import TipsCard from "./TipsCard";
 
-type Props = {};
-
 const personalizedtips = [
   {
     heading: "Budgeting Tip",
@@ -44,7 +42,7 @@ const financialfurneytips = [
   },
 ];
 
-const ResultsGridCard = (props: Props) => {
+const ResultsGridCard = () => {
   return (
     <div className="bg-white opacity-85 w-full p-4 rounded-lg flex flex-col gap-10">
       <div className="flex flex-col gap-7 ">
@@ -54,7 +52,7 @@ const ResultsGridCard = (props: Props) => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
           {personalizedtips.map((tip, index) => {
             return (
-              <TipsCard title={tip.heading} description={tip.description} />
+              <TipsCard key={index} title={tip.heading} description={tip.description} />
             );
           })}
         </div>
@@ -66,7 +64,7 @@ const ResultsGridCard = (props: Props) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {financialfurneytips.map((tip, index) => {
             return (
-              <TipsCard title={tip.heading} description={tip.description} />
+              <TipsCard key={index} title={tip.heading} description={tip.description} />
             );
           })}
         </div>
