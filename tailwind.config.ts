@@ -23,6 +23,7 @@ const config: Config = {
       backgroundImage: {
         main: "url('/images/mainBg.webp')",
         survey: "url('/images/surveyBg.webp')",
+        surveyResult: "url('/images/surveyResultBg.webp')",
       },
       transitionProperty: {
         "grid-rows": "grid-template-rows",

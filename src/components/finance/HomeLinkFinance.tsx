@@ -7,9 +7,10 @@ type HomeLinkProps = {
   href: string;
   text: string;
   circleImg: StaticImageData;
+  IconImg: StaticImageData;
 };
 
-const HomeLink = ({ href, text, circleImg }: HomeLinkProps) => {
+const HomeLinkFinance = ({ href, text, circleImg,IconImg }: HomeLinkProps) => {
   const [isLoaded, setIsLoaded] = useState(false);
   return (
     <>
@@ -24,12 +25,15 @@ const HomeLink = ({ href, text, circleImg }: HomeLinkProps) => {
           className="~sm:~w-32/56 h-auto"
           onLoad={() => setIsLoaded(true)}
         />
-        <span className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-full text-white text-center font-bold text-xl ~sm:~text-xl/5xl whitespace-break-spaces">
-          {text}
-        </span>
+        <div className="flex flex-col justify-center items-center absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+          <Image src={IconImg} alt={"icon"} width={50} height={50} />
+          <span className="w-full text-white text-center font-bold ~sm:~text-xl/5xl whitespace-break-spaces">
+            {text}
+          </span>
+        </div>
       </Link>
     </>
   );
 };
 
-export default HomeLink;
+export default HomeLinkFinance;
