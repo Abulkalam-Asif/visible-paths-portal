@@ -1,11 +1,23 @@
+"use client";
 import { logoIcon } from "@/assets/images";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import HeaderLangDropdown from "./HeaderLangDropdown";
 import HeaderProfile from "./HeaderProfile";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const pathname = usePathname();
+  let heading = "";
+  if (pathname === "/") {
+    heading = "Welcome to VisiblePaths";
+  } else if (pathname === "/find-your-ride") {
+    heading = "Find Your Perfect Ride";
+  } else {
+    heading = "Welcome to VisiblePaths";
+  }
+
   return (
     <>
       <header className="absolute top-0 left-0 right-0 bg-gradient-to-b from-black/100 to-black/0">
@@ -22,7 +34,7 @@ const Header = () => {
                 />
               </Link>
               <h1 className="hidden lg:block ~lg:~text-3xl/4xl text-white font-bold">
-                Welcome to VisiblePaths
+                {heading}
               </h1>
             </div>
             <div className="flex items-center gap-5">
@@ -32,7 +44,7 @@ const Header = () => {
           </div>
           <div className="lg:hidden">
             <h1 className="~/md:~text-2xl/3xl text-center text-white font-bold">
-              Welcome to VisiblePaths
+              {heading}
             </h1>
           </div>
         </div>

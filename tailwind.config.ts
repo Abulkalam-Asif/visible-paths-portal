@@ -26,10 +26,13 @@ const config: Config = {
         padding: "padding",
       },
       colors: {
-        customRed: "#B22234",  // Add your custom color here
+        customRed: "#B22234", // Add your custom color here
       },
       backdropBlur: {
-        custom: "43.70159149169922px",  // Your custom blur value
+        custom: "43.70159149169922px", // Your custom blur value
+      },
+      fontSize: {
+        xxs: "0.625rem",
       },
     },
   },

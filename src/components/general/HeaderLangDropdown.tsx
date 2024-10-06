@@ -66,7 +66,7 @@ const HeaderLangDropdown = () => {
             isExpanded
               ? "grid-rows-[1fr] py-2 border-[.25px] border-white/50"
               : "grid-rows-[0fr]"
-          } transition-grid-rows transition-padding duration-300 bg-[#4D5C69]/60 rounded-lg`}>
+          } transition-all duration-300 bg-[#4D5C69]/60 rounded-lg`}>
           <div className="overflow-hidden flex flex-col">
             {Object.keys(languages).map((lang: string) => (
               <button
