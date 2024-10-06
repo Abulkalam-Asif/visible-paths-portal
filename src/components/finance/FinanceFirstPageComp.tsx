@@ -9,9 +9,7 @@ import {
   financeFirstPageLease,
 } from "@/assets/images";
 
-type Props = {};
-
-const FinanceFirstPageComp = (props: Props) => {
+const FinanceFirstPageComp = () => {
   return (
     <div>
       <section className="min-h-screen h-auto bg-main bg-no-repeat bg-top bg-cover">
