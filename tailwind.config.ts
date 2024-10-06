@@ -17,6 +17,9 @@ const config: Config = {
       screens: {
         xs: "25rem",
       },
+      fontFamily: {
+        helvetica: ["Helvetica", "Arial", "sans-serif"],
+      },
       backgroundImage: {
         main: "url('/images/mainBg.webp')",
         survey: "url('/images/surveyBg.webp')",

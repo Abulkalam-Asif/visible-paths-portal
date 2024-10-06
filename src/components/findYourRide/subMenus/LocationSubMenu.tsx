@@ -20,6 +20,7 @@ const LocationSubMenu = ({
     max = 100;
   const locationSettingHandler = () => {
     // Set the location here
+    setLocation("Current Location");
   };
 
   return (

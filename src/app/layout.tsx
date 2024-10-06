@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
-import { Barlow } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/general/Header";
-
-const barlow = Barlow({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
 
 export const metadata: Metadata = {
   title: "VisiblePaths",
@@ -20,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={barlow.className}>
+      <body className={"font-helvetica"}>
         <Header />
         {children}
       </body>

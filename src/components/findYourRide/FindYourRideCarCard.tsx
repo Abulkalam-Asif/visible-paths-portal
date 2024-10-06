@@ -1,3 +1,4 @@
+"use client";
 import {
   autoCheckIcon,
   drivenWhiteIcon,
@@ -6,9 +7,10 @@ import {
   mileageWhite2Icon,
 } from "@/assets/images";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { FiCheckCircle } from "react-icons/fi";
-import { GoHeart } from "react-icons/go";
+import { GoHeart, GoHeartFill } from "react-icons/go";
+import { motion } from "framer-motion";
 
 type FindYourRideCarCardProps = {
   name: string;
@@ -31,23 +33,39 @@ const FindYourRideCarCard = ({
   properties,
   seller,
 }: FindYourRideCarCardProps) => {
+  const [isFavourite, setIsFavourite] = useState(false);
   return (
     <>
-      <div className="py-3 border-[1.5px] border-white rounded-[10px] bg-white/30 backdrop-blur-[10px] text-white font-bold">
+      <div className="min-w-64 w-full py-3 border-[1.5px] border-white rounded-[10px] bg-white/30 backdrop-blur-[10px] text-white font-bold sm:w-1/2 lg:w-1/3">
         <div className="px-3 xs:px-4">
           <div className="flex flex-row items-center justify-between">
             <span className="text-sm">{name}</span>
-            <button>
-              <GoHeart className="w-5 h-auto" />
-            </button>
+            {isFavourite && (
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.8 }}
+                onClick={() => setIsFavourite(false)}>
+                <GoHeartFill className="w-5 h-auto" />
+              </motion.button>
+            )}
+            {!isFavourite && (
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.8 }}
+                onClick={() => setIsFavourite(true)}>
+                <GoHeart className="w-5 h-auto" />
+              </motion.button>
+            )}
           </div>
           <span className="text-xl">${price}</span>
         </div>
-        <div className="w-full h-auto max-w-40 mx-auto">
-          <img
+        <div className="w-auto h-20 mx-auto">
+          <Image
             src={image}
             alt={name}
             className="w-full h-full object-contain"
+            width={300}
+            height={200}
           />
         </div>
         <hr className="bg-white my-4" />

@@ -8,7 +8,7 @@ const FindYourRideCarsDisplay = () => {
         <h3 className="font-bold mb-4">
           Showing 1-8 of {carsData.length} listings
         </h3>
-        <div className="max-h-[55vh] overflow-y-auto grid grid-cols-1 gap-4 pr-2 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="cars-display max-h-[55vh] overflow-x-auto flex gap-4 pr-2">
           {carsData.map((car, index) => (
             <FindYourRideCarCard key={index} {...car} />
           ))}
