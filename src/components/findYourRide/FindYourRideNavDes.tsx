@@ -49,7 +49,7 @@ const FindYourRideNavDes = () => {
 
   return (
     <>
-      <div className="hidden lg:flex items-end ~lg:~gap-8/20">
+      <div className="hidden relative z-10 lg:flex items-end ~lg:~gap-8/20">
         <div className="flex items-start justify-center ~lg:~gap-6/8">
           <button className="bg-white p-2 rounded-xl">
             <FaArrowLeft className="text-customRed ~lg:~w-6/8 h-auto" />
@@ -75,7 +75,7 @@ const FindYourRideNavDes = () => {
           </div>
         </div>
         <div className="w-full flex items-center gap-2">
-          <div className="w-full bg-customRed skew-x-[25deg] ~lg:~py-5/7">
+          <div className="w-full bg-customRed skew-x-[25deg] ~lg:~py-2/4">
             <h2 className="font-bold text-white skew-x-[-25deg] flex items-center justify-center ~lg:~gap-3/4 py-2 ~lg:~text-3xl/4xl">
               <span>Used Cars for Sale</span>
               <FaChevronRight className="text-white ~lg:~w-3/4 h-auto" />
@@ -89,7 +89,7 @@ const FindYourRideNavDes = () => {
               <span className="underline">Worcester, MA</span>
             </h2>
           </div>
-          <div className="bg-customRed skew-x-[25deg] px-8 ~lg:~py-6/8">
+          <div className="bg-customRed skew-x-[25deg] px-8 ~lg:~py-3/5">
             <div ref={menuDivRef} className="relative skew-x-[-25deg]">
               <button onClick={toggleMenu} className="bg-white p-2 rounded-xl">
                 {isMenuOpen ? (

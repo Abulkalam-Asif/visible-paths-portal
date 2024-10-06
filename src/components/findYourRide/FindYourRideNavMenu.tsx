@@ -121,7 +121,6 @@ const FindYourRideNavMenu = () => {
         })}
         {subMenuOpenType && (
           <FindYourRideSubMenuLayout
-            subMenuOpenType={subMenuOpenType}
             heading={menuMetadata[subMenuOpenType].text}
             icon={menuMetadata[subMenuOpenType].subMenuIcon}>
             {subMenuOpenType === "price" && (

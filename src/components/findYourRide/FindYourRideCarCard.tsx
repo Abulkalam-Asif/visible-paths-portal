@@ -81,7 +81,7 @@ const FindYourRideCarCard = ({
               <span>{driven}</span>
             </p>
           </div>
-          <div className="flex items-center gap-2 text-xxs">
+          <div className="flex items-center gap-2 text-xxs xs:px-2">
             <FiCheckCircle className="w-4 h-auto" />
             <ul className="flex items-center">
               {properties.map((property, index) => (
@@ -94,7 +94,7 @@ const FindYourRideCarCard = ({
               ))}
             </ul>
           </div>
-          <div className="flex items-center gap-2 text-xxs">
+          <div className="flex items-center gap-2 text-xxs xs:px-2">
             <Image
               src={locationWhiteIcon}
               alt="Location"
@@ -103,12 +103,13 @@ const FindYourRideCarCard = ({
             />
             <span>{seller}</span>
           </div>
-          <div className="flex items-center text-xs">
+          <div className="flex items-center text-xs gap-2 xs:px-2">
             <Image
               src={autoCheckIcon}
               alt="AutoCheck"
-              width={100}
-              height={50}
+              width={150}
+              height={150}
+              className="h-6 w-auto"
             />
             <span>Vehicle history report</span>
           </div>

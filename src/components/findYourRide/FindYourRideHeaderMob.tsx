@@ -7,7 +7,7 @@ import FindYourRideNavMob from "./FindYourRideNavMob";
 const FindYourRideHeaderMob = () => {
   return (
     <>
-      <div className="lg:hidden">
+      <div className="relative z-10 lg:hidden">
         <div className="bg-customRed skew-x-[20deg]">
           <h2 className="font-bold text-white skew-x-[-20deg] flex items-center justify-center gap-1 py-2 ~/sm:~text-base/2xl">
             <span>Used Cars for Sale</span>
