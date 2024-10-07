@@ -17,7 +17,7 @@ const FinanceFirstPageComp = () => {
           <div className="w-full flex flex-col items-center ~sm:~gap-4/20 sm:flex-row sm:justify-evenly">
             <HomeLinkFinance
               text="Loan"
-              href="/"
+              href="/finance/loan-lease"
               circleImg={circleBlackImg}
               IconImg={financeFirstPageIcon}
             />
