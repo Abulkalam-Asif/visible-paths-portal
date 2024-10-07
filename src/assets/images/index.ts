@@ -3,6 +3,7 @@ export { default as logoIcon } from "./general/logo.svg";
 export { default as usFlagIcon } from "./general/usFlag.svg";
 export { default as esFlagIcon } from "./general/esFlag.svg";
 export { default as frFlagIcon } from "./general/frFlag.svg";
+export { default as chatbotIcon } from "./general/chatbot.webp";
 
 // Home
 export { default as circleBlackImg } from "./home/circleBlack.svg";
