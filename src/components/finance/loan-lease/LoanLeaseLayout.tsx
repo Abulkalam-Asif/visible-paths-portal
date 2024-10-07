@@ -7,7 +7,6 @@ import FormInputBox from "./FormInputBox";
 import { FcGoogle } from "react-icons/fc";
 
 type Props = {
-  nodeNumber: number;
   children: React.ReactNode;
 };
 
@@ -52,7 +51,7 @@ const defaultFormData: FormData = {
   confirmPassword: "",
 };
 
-const LoanLeaseLayout = ({ nodeNumber, children }: Props) => {
+const LoanLeaseLayout = ({ children }: Props) => {
   const router = useRouter();
   const params = useSearchParams();
   const myParams = new URLSearchParams(params);
