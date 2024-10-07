@@ -7,7 +7,7 @@ import FormCompScreen03 from "./FormCompScreen03";
 import FormCompScreen04 from "./FormCompScreen04";
 import FormCompSummaryScreen from "./FormCompSummaryScreen";
 
-export default function LoadLeaseLayoutInnerComp() {
+export default function LoanLeaseLayoutInnerComp() {
   const params = useSearchParams();
   const myParams = new URLSearchParams(params);
   const [currentPage, setCurrentPage] = useState(myParams.get("page") || "1");
@@ -33,7 +33,6 @@ export default function LoadLeaseLayoutInnerComp() {
   if (currentPage === "4") {
     return <FormCompScreen04 />;
   }
-
   if (currentPage === "5") {
     return <FormCompSummaryScreen />;
   }
