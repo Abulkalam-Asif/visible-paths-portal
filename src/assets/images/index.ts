@@ -34,3 +34,6 @@ export {default as financeFirstPageCash} from "../finance/financeFirstPageCash.s
 export {default as financeFirstPageLease} from "../finance/financeFirstPageLease.svg"
 export {default as LoanLeaseResult} from "../finance/loanLeaseResultCenterImg.svg"
 
+
+//cash
+export {default as monthlyPaymentBg} from "../cash/monthlyPaymentBg.svg"
