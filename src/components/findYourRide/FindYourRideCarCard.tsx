@@ -11,8 +11,10 @@ import React, { useState } from "react";
 import { FiCheckCircle } from "react-icons/fi";
 import { GoHeart, GoHeartFill } from "react-icons/go";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 type FindYourRideCarCardProps = {
+  id: string;
   name: string;
   price: string;
   image: string;
@@ -24,6 +26,7 @@ type FindYourRideCarCardProps = {
 };
 
 const FindYourRideCarCard = ({
+  id,
   name,
   price,
   image,
@@ -36,7 +39,9 @@ const FindYourRideCarCard = ({
   const [isFavourite, setIsFavourite] = useState(false);
   return (
     <>
-      <div className="min-w-64 w-full py-3 border-[1.5px] border-white rounded-[10px] bg-white/30 backdrop-blur-[10px] text-white font-bold sm:w-1/2 lg:w-1/3">
+      <Link
+        href={`/find-your-ride/compare/${id}`}
+        className="min-w-64 w-full py-3 border-[1.5px] border-white rounded-[10px] bg-white/30 backdrop-blur-[10px] text-white font-bold sm:w-1/2 lg:w-1/3">
         <div className="px-3 xs:px-4">
           <div className="flex flex-row items-center justify-between">
             <span className="text-sm">{name}</span>
@@ -132,7 +137,7 @@ const FindYourRideCarCard = ({
             <span>Vehicle history report</span>
           </div>
         </div>
-      </div>
+      </Link>
     </>
   );
 };

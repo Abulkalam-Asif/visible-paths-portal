@@ -12,7 +12,7 @@ const Header = () => {
   let heading = "";
   if (pathname === "/") {
     heading = "Welcome to VisiblePaths";
-  } else if (pathname === "/find-your-ride") {
+  } else if (pathname.startsWith("/find-your-ride")) {
     heading = "Find Your Perfect Ride";
   } else {
     heading = "Welcome to VisiblePaths";

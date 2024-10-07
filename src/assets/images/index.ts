@@ -35,26 +35,28 @@ export { default as engineWhite2Icon } from "./findYourRide/engineWhite2.svg";
 export { default as drivenWhiteIcon } from "./findYourRide/drivenWhite.svg";
 export { default as autoCheckIcon } from "./findYourRide/autoCheck.webp";
 
-// Survey
-export {default as Section0Completion} from "../survey/Section0CompletionRoadMap.svg"
-export {default as Section1Completion} from "../survey/Section1CompletionRoadMap.svg"
-export {default as Section2Completion} from "../survey/Section2CompletionRoadMap.svg"
-export {default as Section3Completion} from "../survey/Section3CompletionRoadMap.svg"
-export {default as Section4Completion} from "../survey/Section4CompletionRoadMap.svg"
-export {default as Section5Completion} from "../survey/Section5CompletionRoadMap.svg"
-export {default as Section6Completion} from "../survey/Section6CompletionRoadMap.svg"
-export {default as Section7Completion} from "../survey/Section7CompletionRoadMap.svg"
-export {default as Section8Completion} from "../survey/Section8CompletionRoadMap.svg"
+// Find your ride - Compare
+export { default as compareCarBgImg } from "./findYourRide/compare/compareCarBg.svg";
+export { default as prosIcon } from "./findYourRide/compare/pros.png";
+export { default as consIcon } from "./findYourRide/compare/cons.png";
 
+// Survey
+export { default as Section0Completion } from "../survey/Section0CompletionRoadMap.svg";
+export { default as Section1Completion } from "../survey/Section1CompletionRoadMap.svg";
+export { default as Section2Completion } from "../survey/Section2CompletionRoadMap.svg";
+export { default as Section3Completion } from "../survey/Section3CompletionRoadMap.svg";
+export { default as Section4Completion } from "../survey/Section4CompletionRoadMap.svg";
+export { default as Section5Completion } from "../survey/Section5CompletionRoadMap.svg";
+export { default as Section6Completion } from "../survey/Section6CompletionRoadMap.svg";
+export { default as Section7Completion } from "../survey/Section7CompletionRoadMap.svg";
+export { default as Section8Completion } from "../survey/Section8CompletionRoadMap.svg";
 
 // Survey Results
-export {default as JP} from "../survey/results/JP.webp"
-export {default as TipsBoxIcon} from "../survey/results/TipsBoxIcon.svg"
-
+export { default as JP } from "../survey/results/JP.webp";
+export { default as TipsBoxIcon } from "../survey/results/TipsBoxIcon.svg";
 
 //finance
-export {default as financeFirstPageIcon} from "../finance/financeFirstPageLoanIcon.svg"
-export {default as financeFirstPageCash} from "../finance/financeFirstPageCash.svg"
-export {default as financeFirstPageLease} from "../finance/financeFirstPageLease.svg"
-export {default as LoanLeaseResult} from "../finance/loanLeaseResultCenterImg.svg"
-
+export { default as financeFirstPageIcon } from "../finance/financeFirstPageLoanIcon.svg";
+export { default as financeFirstPageCash } from "../finance/financeFirstPageCash.svg";
+export { default as financeFirstPageLease } from "../finance/financeFirstPageLease.svg";
+export { default as LoanLeaseResult } from "../finance/loanLeaseResultCenterImg.svg";

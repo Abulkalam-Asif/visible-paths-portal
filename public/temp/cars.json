@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "name": "2024 Challenger SXT",
     "price": "30000",
     "image": "/temp/car1.png",
@@ -10,6 +11,7 @@
     "seller": "VisiblePaths Auto Sales (15 mi away)"
   },
   {
+    "id": "2",
     "name": "2024 Challenger SXT",
     "price": "30000",
     "image": "/temp/car2.png",
@@ -20,6 +22,7 @@
     "seller": "VisiblePaths Auto Sales (15 mi away)"
   },
   {
+    "id": "3",
     "name": "2024 Challenger SXT",
     "price": "30000",
     "image": "/temp/car3.png",
@@ -30,6 +33,7 @@
     "seller": "VisiblePaths Auto Sales (15 mi away)"
   },
   {
+    "id": "4",
     "name": "2024 Challenger SXT",
     "price": "30000",
     "image": "/temp/car1.png",
@@ -40,6 +44,7 @@
     "seller": "VisiblePaths Auto Sales (15 mi away)"
   },
   {
+    "id": "5",
     "name": "2024 Challenger SXT",
     "price": "30000",
     "image": "/temp/car4.png",
@@ -50,6 +55,7 @@
     "seller": "VisiblePaths Auto Sales (15 mi away)"
   },
   {
+    "id": "6",
     "name": "2024 Challenger SXT",
     "price": "30000",
     "image": "/temp/car2.png",
@@ -60,6 +66,7 @@
     "seller": "VisiblePaths Auto Sales (15 mi away)"
   },
   {
+    "id": "7",
     "name": "2024 Challenger SXT",
     "price": "30000",
     "image": "/temp/car3.png",
@@ -70,6 +77,7 @@
     "seller": "VisiblePaths Auto Sales (15 mi away)"
   },
   {
+    "id": "8",
     "name": "2024 Challenger SXT",
     "price": "30000",
     "image": "/temp/car4.png",
@@ -80,6 +88,7 @@
     "seller": "VisiblePaths Auto Sales (15 mi away)"
   },
   {
+    "id": "9",
     "name": "2024 Challenger SXT",
     "price": "30000",
     "image": "/temp/car1.png",
@@ -90,6 +99,7 @@
     "seller": "VisiblePaths Auto Sales (15 mi away)"
   },
   {
+    "id": "10",
     "name": "2024 Challenger SXT",
     "price": "30000",
     "image": "/temp/car3.png",
@@ -100,6 +110,7 @@
     "seller": "VisiblePaths Auto Sales (15 mi away)"
   },
   {
+    "id": "11",
     "name": "2024 Challenger SXT",
     "price": "30000",
     "image": "/temp/car2.png",
@@ -110,6 +121,7 @@
     "seller": "VisiblePaths Auto Sales (15 mi away)"
   },
   {
+    "id": "12",
     "name": "2024 Challenger SXT",
     "price": "30000",
     "image": "/temp/car4.png",
