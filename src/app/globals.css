@@ -54,28 +54,28 @@
 }
 
 /* Cars display scrollbar styling */
-.cars-display::-webkit-scrollbar {
+.custom-scrollbar::-webkit-scrollbar {
   width: 8px;
   height: 8px;
   border-radius: 100%;
 }
 
-.cars-display::-webkit-scrollbar-thumb {
+.custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(4px);
   border-radius: 100%;
 }
 
-.cars-display::-webkit-scrollbar-thumb:hover {
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background-color: rgba(255, 255, 255, 1);
 }
 
-.cars-display::-webkit-scrollbar-track {
+.custom-scrollbar::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
 /* For Firefox */
-.cars-display {
+.custom-scrollbar {
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
 }
