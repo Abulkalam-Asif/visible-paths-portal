@@ -56,11 +56,10 @@ export { default as JP } from "../survey/results/JP.webp";
 export { default as TipsBoxIcon } from "../survey/results/TipsBoxIcon.svg";
 
 //finance
-export {default as financeFirstPageIcon} from "../finance/financeFirstPageLoanIcon.svg"
-export {default as financeFirstPageCash} from "../finance/financeFirstPageCash.svg"
-export {default as financeFirstPageLease} from "../finance/financeFirstPageLease.svg"
-export {default as LoanLeaseResult} from "../finance/loanLeaseResultCenterImg.svg"
-
+export { default as financeFirstPageIcon } from "../finance/financeFirstPageLoanIcon.svg";
+export { default as financeFirstPageCash } from "../finance/financeFirstPageCash.svg";
+export { default as financeFirstPageLease } from "../finance/financeFirstPageLease.svg";
+export { default as LoanLeaseResult } from "../finance/loanLeaseResultCenterImg.svg";
 
 //cash
-export {default as monthlyPaymentBg} from "../cash/monthlyPaymentBg.svg"
+export { default as monthlyPaymentBg } from "../cash/monthlyPaymentBg.svg";
