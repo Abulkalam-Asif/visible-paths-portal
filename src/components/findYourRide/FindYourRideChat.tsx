@@ -88,7 +88,7 @@ const FindYourRideChat = ({ closeChat }: FindYourRideChatProps) => {
               className="w-8 h-8 rounded-full"
             />
             <div className="flex flex-col items-start">
-              <span className="text-lg font-bold">Let's Chat!</span>
+              <span className="text-lg font-bold">Let&apos;s Chat!</span>
               <span className="text-sm">Online</span>
             </div>
           </div>
