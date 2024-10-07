@@ -7,7 +7,7 @@ import FormInputBox from "./FormInputBox";
 import { FcGoogle } from "react-icons/fc";
 
 type Props = {
-  nodeNumber: Number;
+  nodeNumber: number;
   children: React.ReactNode;
 };
 

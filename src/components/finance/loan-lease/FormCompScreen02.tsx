@@ -29,9 +29,6 @@ const FormCompScreen02 = () => {
   const router = useRouter();
   const params = useSearchParams();
   const myParams = new URLSearchParams(params);
-  const [currentPage, setCurrentPage] = useState<string>(
-    params.get("page") || "",
-  );
 
   const formDataInputHandler = (name: string, value: string) => {
     setFormData({ ...formData, [name]: value });
@@ -55,21 +52,18 @@ const FormCompScreen02 = () => {
 
   const onNext = () => {
     saveFormDataToLocalStorage();
-    setCurrentPage((prev: string) => {
-      const newPage = Number(prev) + 1;
-      myParams.set("page", newPage.toString());
-      router.push("/finance/loan-lease?" + myParams.toString());
-      return newPage.toString();
-    });
+
+    const newPage = 3;
+    myParams.set("page", newPage.toString());
+    router.push("/finance/loan-lease?" + myParams.toString());
+    return newPage.toString();
   };
 
   const onPrev = () => {
-    setCurrentPage(prev => {
-      const newPage = Number(prev) - 1;
-      myParams.set("page", newPage.toString());
-      router.push("/finance/loan-lease?" + myParams.toString());
-      return newPage.toString();
-    });
+    const newPage = 1;
+    myParams.set("page", newPage.toString());
+    router.push("/finance/loan-lease?" + myParams.toString());
+    return newPage.toString();
   };
 
   const handleRadioChange = (e: React.ChangeEvent<HTMLInputElement>) => {

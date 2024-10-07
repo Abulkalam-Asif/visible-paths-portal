@@ -50,7 +50,7 @@ const FormCompScreen01 = () => {
 
   const onNext = () => {
     saveFormDataToLocalStorage();
-    setCurrentPage(prev => {
+    setCurrentPage(() => {
       const newPage = 2;
       myParams.set("page", newPage.toString());
       router.push("/finance/loan-lease?" + myParams.toString());

@@ -20,9 +20,6 @@ const FormCompScreen04 = () => {
   const router = useRouter();
   const params = useSearchParams();
   const myParams = new URLSearchParams(params);
-  const [currentPage, setCurrentPage] = useState<string>(
-    params.get("page") || "",
-  );
 
   const formDataInputHandler = (name: string, value: string) => {
     setFormData({ ...formData, [name]: value });
@@ -44,24 +41,17 @@ const FormCompScreen04 = () => {
     localStorage.setItem("formDataScreen04", JSON.stringify(formData));
   };
 
-  //checking state changings
-  useEffect(() => {
-    console.log(currentPage);
-  }, [currentPage]);
-
   const onNext = () => {
     saveFormDataToLocalStorage();
     router.push("/finance/loan-lease?page=signup");
   };
 
   const onPrev = () => {
-    setCurrentPage((prev: string) => {
-      const newPage = Number(prev) - 1;
-      myParams.set("page", newPage.toString());
-      router.push("/finance/loan-lease?" + myParams.toString());
-      return newPage.toString();
-    });
-  };
+    const newPage = 3;
+    myParams.set("page", newPage.toString());
+    router.push("/finance/loan-lease?" + myParams.toString());
+    return newPage.toString();
+  }; 
 
   return (
     <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}>

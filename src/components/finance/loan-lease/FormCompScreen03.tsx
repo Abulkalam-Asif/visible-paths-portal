@@ -26,10 +26,6 @@ const FormCompScreen03 = () => {
   const router = useRouter();
   const params = useSearchParams();
   const myParams = new URLSearchParams(params);
-  const [currentPage, setCurrentPage] = useState<string>(
-    params.get("page") || "",
-  );
-
   const formDataInputHandler = (name: string, value: string) => {
     setFormData({ ...formData, [name]: value });
   };
@@ -52,26 +48,21 @@ const FormCompScreen03 = () => {
 
   const onNext = () => {
     saveFormDataToLocalStorage();
-    setCurrentPage((prev: string) => {
-      const newPage = Number(prev) + 1;
-      myParams.set("page", newPage.toString());
-      router.push("/finance/loan-lease?" + myParams.toString());
-      return newPage.toString();
-    });
+    const newPage = 4;
+    myParams.set("page", newPage.toString());
+    router.push("/finance/loan-lease?" + myParams.toString());
+    return newPage.toString();
   };
 
   const onPrev = () => {
-    setCurrentPage((prev: string) => {
-      const newPage = Number(prev) - 1;
-      myParams.set("page", newPage.toString());
-      router.push("/finance/loan-lease?" + myParams.toString());
-      return newPage.toString();
-    });
+    const newPage = 2;
+    myParams.set("page", newPage.toString());
+    router.push("/finance/loan-lease?" + myParams.toString());
+    return newPage.toString();
   };
   return (
     <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}>
-      <form
-        className="flex flex-col gap-6">
+      <form className="flex flex-col gap-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 ~/lg:~px-4/12">
           <RequestDemoSelect
             label="Employe Status"
