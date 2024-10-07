@@ -21,6 +21,7 @@ const config: Config = {
         main: "url('/images/mainBg.webp')",
         survey: "url('/images/surveyBg.webp')",
         surveyResult: "url('/images/surveyResultBg.webp')",
+        loanLease: "url('/images/financeloan.webp')",
       },
       transitionProperty: {
         "grid-rows": "grid-template-rows",
@@ -30,10 +31,13 @@ const config: Config = {
         customRed: "#B22234",  // Add your custom color here
       },
       backdropBlur: {
-        custom: "43.70159149169922px",  // Your custom blur value
+        financeForm: "10px",  // Your custom blur value
       },
     },
   },
   plugins: [fluid],
+  corePlugins: {
+    backdropFilter: true,
+  }
 };
 export default config;

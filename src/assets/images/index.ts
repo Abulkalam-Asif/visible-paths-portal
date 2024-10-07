@@ -32,4 +32,5 @@ export {default as TipsBoxIcon} from "../survey/results/TipsBoxIcon.svg"
 export {default as financeFirstPageIcon} from "../finance/financeFirstPageLoanIcon.svg"
 export {default as financeFirstPageCash} from "../finance/financeFirstPageCash.svg"
 export {default as financeFirstPageLease} from "../finance/financeFirstPageLease.svg"
+export {default as LoanLeaseResult} from "../finance/loanLeaseResultCenterImg.svg"
 
