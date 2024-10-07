@@ -4,14 +4,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { monthlyPaymentBg } from "@/assets/images";
 
-const financeKeyToMetadata = {
-  monPayment: {
-    label: "Total Monthly Loan Payment",
-    prefix: "$",
-    postfix: "",
-  },
-};
-
 type FinanceBudgetResultProps = {
   carValue: number;
 };

@@ -1,10 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import RangeInput from "./RangeInput";
 import FormInputBox from "../finance/loan-lease/FormInputBox";
 import { motion } from "framer-motion";
 
-type prop = {
+type prop = { 
   carValue: number | null;
   setCarValue: React.Dispatch<React.SetStateAction<number>>;
 };
