@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "2024 Challenger SXT",
+    "price": "30000",
+    "image": "/temp/car1.png",
+    "pros": [
+      "Excellent Safety Ratings",
+      "Great All Around Visibility",
+      "Engaging To Drive"
+    ],
+    "cons": ["Below Average Fuel Economy", "Cramped Rear Seat"]
+  },
+  {
+    "id": "2",
+    "name": "2024 Challenger SXT",
+    "price": "30000",
+    "image": "/temp/car2.png",
+    "pros": [
+      "Excellent Safety Ratings",
+      "Great All Around Visibility",
+      "Engaging To Drive"
+    ],
+    "cons": ["Below Average Fuel Economy"]
+  },
+  {
+    "id": "3",
+    "name": "2024 Challenger SXT",
+    "price": "30000",
+    "image": "/temp/car3.png",
+    "pros": [
+      "Excellent Safety Ratings",
+      "Great All Around Visibility",
+      "Engaging To Drive"
+    ],
+    "cons": ["Higher insurance rate"]
+  }
+]
