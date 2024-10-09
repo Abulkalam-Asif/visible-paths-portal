@@ -10,14 +10,14 @@ const StepNodeComp = ({ nodeNumber, title, isHighlighted }: Props) => {
   return (
     <div className="relative flex flex-col items-center">
       <div
-        className={`w-10 h-10 flex items-center justify-center border-black border-2 rounded-full font-bold ${
-          isHighlighted ? "bg-customRed text-white border-none" : "bg-white"
+        className={`w-8 h-8 flex items-center justify-center border-black border-2 rounded-full font-bold text-white ${
+          isHighlighted ? "bg-customRed border-none" : "bg-black"
         } transition-color duration-700 ease-in-out`}>
         {nodeNumber}
       </div>
       <div
-        className={`hidden sm:block absolute top-full translate-y-1 font-bold whitespace-nowrap  ${
-          isHighlighted ? "text-customRed" : "text-white"
+        className={`hidden sm:block absolute top-full translate-y-1 font-bold whitespace-nowrap text-sm  ${
+          isHighlighted ? "text-customRed" : ""
         }`}>
         {title}
       </div>

@@ -80,7 +80,7 @@ const LoanLeaseLayout = ({ children }: Props) => {
     "Hi JP! Let us know About your Current Residance.",
     "Next, Tell Us About your Employment Status.",
     "Now, we just Need a Little More Information to See if you Pre-Qualify.",
-    "Let’s Double-Check Everything.",
+    "Let's Double-Check Everything.",
   ];
 
   return (
@@ -184,10 +184,10 @@ const LoanLeaseLayout = ({ children }: Props) => {
           </div>
         </div>
       ) : (
-        <div className="backdrop-blur-financeForm bg-[#737475]/30 border-white border-2 p-5 rounded-[36px]">
-          <div className="flex flex-col justify-between items-center">
-            <div className="w-full p-10 flex justify-center items-center">
-              <h1 className="text-white font-extrabold ~/sm:~text-xl/4xl">
+        <div className="bg-white/80 border-customRed border-2 pt-7 pb-2 rounded-2xl ~/lg:~px-4/12">
+          <div className="flex flex-col justify-between items-center gap-8">
+            <div className="w-full flex justify-center items-center">
+              <h1 className="text-black font-bold ~/sm:~text-xl/3xl">
                 {titleArray[currentPage]}
               </h1>
             </div>
