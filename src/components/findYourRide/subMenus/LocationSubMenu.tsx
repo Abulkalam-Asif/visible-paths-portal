@@ -27,7 +27,7 @@ const LocationSubMenu = ({
     <div className="flex flex-col gap-2 px-2">
       <button
         onClick={locationSettingHandler}
-        className="w-fit flex items-center ~text-sm/base gap-2 font-semibold px-3 py-1 border-[0.5px] border-white bg-white/30 rounded-md">
+        className="w-fit flex items-center ~text-sm/base gap-2 font-semibold px-3 py-1 border-[0.5px] border-black bg-white/80 rounded-md">
         <Image
           src={locationWhiteIcon}
           alt="Location"

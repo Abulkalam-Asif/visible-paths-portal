@@ -78,7 +78,7 @@ const FindYourRideChat = ({ closeChat }: FindYourRideChatProps) => {
         exit={{ opacity: 0, scale: 0.5 }}
         transition={{ duration: 0.1 }}
         className="text-white absolute z-[12] bottom-[calc(100%+.5rem)] overflow-hidden right-4 w-4/5 max-w-lg border border-white rounded-xl">
-        <div className="text-white bg-customRed px-6 py-3 flex items-center justify-between">
+        <div className="bg-customRed px-6 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <Image
               src={"/temp/profile.png"}
@@ -98,7 +98,7 @@ const FindYourRideChat = ({ closeChat }: FindYourRideChatProps) => {
             </button>
           </div>
         </div>
-        <div className="flex flex-col bg-black/20 backdrop-blur-sm px-3">
+        <div className="flex flex-col bg-white/80 backdrop-blur-md px-3">
           <div
             ref={messagesDivRef}
             className="custom-scrollbar flex flex-col gap-4 py-5 max-h-[50vh] overflow-y-auto">
@@ -110,14 +110,14 @@ const FindYourRideChat = ({ closeChat }: FindYourRideChatProps) => {
               />
             ))}
           </div>
-          <div className="flex gap-2 my-4 rounded-full border border-white px-4">
+          <div className="flex gap-2 my-4 rounded-full border border-black text-black px-4">
             <input
               type="text"
               placeholder="Type a reply..."
-              className="bg-transparent outline-none placeholder:text-white py-2.5 text-sm w-full"
+              className="bg-transparent outline-none placeholder:text-black py-2.5 text-sm w-full"
             />
             <button>
-              <MdOutlineGif className="w-5 h-auto border rounded" />
+              <MdOutlineGif className="w-5 h-auto border border-black rounded" />
             </button>
             <button>
               <CiFaceSmile className="w-5 h-auto" />

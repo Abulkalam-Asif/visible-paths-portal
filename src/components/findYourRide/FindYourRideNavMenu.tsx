@@ -104,7 +104,7 @@ const FindYourRideNavMenu = () => {
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.5 }}
         transition={{ duration: 0.1 }}
-        className="absolute w-max top-[calc(100%+.5rem)] right-0 border border-white bg-white/30 backdrop-blur-md rounded-md px-1 py-3 grid grid-cols-2 ~gap-x-0.5/1 ~gap-y-3/5">
+        className="absolute w-max top-[calc(100%+.5rem)] right-0 border border-customRed bg-white/80 backdrop-blur-md rounded-md px-1 py-3 grid grid-cols-2 ~gap-x-0.5/1 ~gap-y-3/5">
         {Object.keys(menuMetadata).map((key, index) => {
           const { icon, text } = menuMetadata[key as keyof typeof menuMetadata];
           return (

@@ -40,7 +40,7 @@ const CheckboxInput = ({
               onChange={colorInputHandler}
               className="w-0 h-0 peer"
             />
-            <span className="absolute left-0 top-1/2 -translate-y-1/2 ~w-5/7 ~h-5/7 border-[0.5px] border-white bg-white/30 rounded-md peer-checked:bg-white/100 peer-checked:border-transparent"></span>
+            <span className="absolute left-0 top-1/2 -translate-y-1/2 ~w-5/7 ~h-5/7 border-[0.5px] border-black bg-white/80 rounded-md peer-checked:bg-black"></span>
             <span className="capitalize font-bold ~text-xs/base">{label}</span>
           </label>
         ))}
