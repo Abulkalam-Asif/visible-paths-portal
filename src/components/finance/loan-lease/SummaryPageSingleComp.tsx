@@ -10,13 +10,13 @@ type Props = {
 
 const SummaryPageSingleComp = ({ dataItems, title }: Props) => {
   return (
-    <div className="p-4 flex flex-col ~/sm:~gap-4/6 placeholder:text-white text-white text-sm border-2 border-white rounded-xl font-medium backdrop-blur-[50] bg-white/20">
-      <h1 className="~/sm:~text-3xl/4xl">{title}</h1>
+    <div className="p-4 flex flex-col font-bold min-w-full ~/sm:~gap-4/6 placeholder:text-black text-black text-sm border border-black rounded-xl backdrop-blur-[50]">
+      <h1 className="~/sm:~text-lg/2xl">{title}</h1>
       <div className="grid grid-cols-1 sm:grid-cols-4">
         {dataItems.map(item => (
           <div key={item.label}>
-            <p className="text-2xl">{item.label}</p>
-            <p className="px-1 text-xl">{item.value}</p>
+            <p className="text-lg">{item.label}</p>
+            <p className="text-md">{item.value}</p>
           </div>
         ))}
       </div>

@@ -7,7 +7,7 @@ const CashClient = () => {
   const [carPrice, setCarPrice] = useState(0);
   return (
     <section className="min-h-screen h-auto bg-survey bg-no-repeat bg-top bg-cover">
-      <div className="max-w-7xl mx-auto ~px-4/12 pb-4 ~/md:~pt-36/40 lg:pt-36">
+      <div className="max-w-5xl mx-auto ~px-4/12 pb-4 ~/md:~pt-36/40 lg:pt-36">
         <div className="~/sm:~px-20/40">
           <h1 className="bg-customRed rounded-lg text-white ~/sm:~text-md/3xl text-center py-4 font-extrabold">
             CASH - TOTAL PAYMENT CALCULATOR

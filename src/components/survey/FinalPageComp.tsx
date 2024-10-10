@@ -12,7 +12,7 @@ const FinalPageComp = () => {
 
   return (
     <section className="min-h-screen h-full bg-survey bg-no-repeat bg-bottom bg-cover">
-      <div className="max-w-7xl h-full mx-auto sm:flex justify-between ~px-4/12 pb-4 ~/md:~pt-32/40 lg:pt-22">
+      <div className="max-w-5xl h-full mx-auto sm:flex justify-between ~px-4/12 pb-4 ~/md:~pt-32/40 lg:pt-22">
         <div className="w-full self-center max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl mx-auto">
           <div className="bg-white opacity-80 p-8 rounded-lg font-extrabold text-black">
             <h1 className="text-center text-customRed p-5 text-2xl md:text-4xl">

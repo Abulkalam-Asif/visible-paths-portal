@@ -77,7 +77,7 @@ const FormCompScreen02 = () => {
   return (
     <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}>
       <form onSubmit={handleSubmit}>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 ~/lg:~px-4/12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
           <FormInputBox
             type="text"
             label="Home Address"
@@ -129,15 +129,15 @@ const FormCompScreen02 = () => {
             required={true}
           />
           <div className="p-2 max-w-full">
-            <label htmlFor={"wish"} className="font-bold text-white text-xl">
+            <label htmlFor={"wish"} className="font-bold text-black text-xl">
               Do you own or rent ? <span className="text-accent1">*</span>
             </label>
             <div className="~/sm:~mt-1/2 flex ~/sm:~space-x-4/2 ~/sm:~text-md/xl max-w-full">
               <label
                 className={`cursor-pointer ~/sm:~px-2/5 py-2 border rounded ${
                   formData.wish === "OWN"
-                    ? "bg-customRed border-customRed text-white"
-                    : "border-white text-white font-bold"
+                    ? "bg-customRed text-white"
+                    : "border-black text-black"
                 }`}>
                 <input
                   type="radio"
@@ -152,8 +152,8 @@ const FormCompScreen02 = () => {
               <label
                 className={`cursor-pointer ~/sm:~px-2/5 py-2 border rounded ${
                   formData.wish === "RENT"
-                    ? "bg-customRed border-customRed text-white"
-                    : "border-white text-white font-bold"
+                    ? "bg-customRed text-white"
+                    : "border-black text-black"
                 }`}>
                 <input
                   type="radio"
@@ -168,8 +168,8 @@ const FormCompScreen02 = () => {
               <label
                 className={`cursor-pointer ~/sm:~px-2/5 py-2 border rounded ${
                   formData.wish === "OTHER"
-                    ? "bg-customRed border-customRed text-white"
-                    : "border-white text-white font-bold"
+                    ? "bg-customRed text-white"
+                    : "border-black text-black"
                 }`}>
                 <input
                   type="radio"

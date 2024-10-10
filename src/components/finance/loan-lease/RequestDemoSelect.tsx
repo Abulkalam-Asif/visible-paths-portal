@@ -30,7 +30,7 @@ const RequestDemoSelect = ({
   return (
     <>
       <div className={`${className} flex flex-col gap-2.5`}>
-        <label htmlFor={idHtmlFor} className="font-bold text-white">
+        <label htmlFor={idHtmlFor} className="font-bold text-black">
           {label} {required && <span className="text-accent1">*</span>}
         </label>
         <select
@@ -39,7 +39,7 @@ const RequestDemoSelect = ({
           name={name}
           required={required}
           onChange={onChangeHandler}
-          className="px-4 py-3 placeholder:text-white text-white text-sm border-2 border-white rounded font-medium backdrop-blur-[50] bg-white/30">
+          className="px-4 py-3 placeholder:text-black text-black text-sm border border-black rounded font-medium backdrop-blur-[50] bg-white/30">
           {options.map(option => (
             <option key={option.value} value={option.value}>
               {option.label}

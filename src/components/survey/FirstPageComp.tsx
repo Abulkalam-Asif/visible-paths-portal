@@ -14,7 +14,7 @@ const FirstPageComp = () => {
   };
   return (
     <section className="min-h-screen h-full bg-survey bg-no-repeat bg-bottom bg-cover">
-      <div className="max-w-7xl h-full mx-auto sm:flex justify-between ~px-4/12 pb-4 ~/md:~pt-32/40 lg:pt-22">
+      <div className="max-w-5xl h-full mx-auto sm:flex justify-between ~px-4/12 pb-4 ~/md:~pt-32/40 lg:pt-22">
         <div className="w-full self-center max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl mx-auto">
           <div className="backdrop-blur-financeForm text-white bg-[#737475]/30 border-white border-2 p-8 rounded-lg font-extrabold ">
             <h1 className="text-center text-customRed p-5 text-2xl md:text-4xl">

@@ -48,7 +48,7 @@ const SurverySectionCompletion = ({ image }: Props) => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
         className="~px-4/12 pb-4 ~/md:~pt-32/40 lg:pt-32">
-        <div className="relative border-white border-2 rounded-[36px] max-w-7xl mx-auto before:backdrop-blur-md bg-[#737475]/50 flex flex-col gap-5 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:inset-0 before:-z-10">
+        <div className="relative border-white border-2 rounded-[36px] max-w-5xl mx-auto before:backdrop-blur-md bg-[#737475]/50 flex flex-col gap-5 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:inset-0 before:-z-10">
           <h1 className="text-xl sm:text-3xl w-full max-w-3xl self-center text-center font-bold rounded-md text-white py-4">
             Unlock Your Financial Personality
           </h1>

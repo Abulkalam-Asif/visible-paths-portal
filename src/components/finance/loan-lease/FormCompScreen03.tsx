@@ -63,7 +63,7 @@ const FormCompScreen03 = () => {
   return (
     <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}>
       <form className="flex flex-col gap-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 ~/lg:~px-4/12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
           <RequestDemoSelect
             label="Employe Status"
             name="employeStatus"
@@ -127,7 +127,7 @@ const FormCompScreen03 = () => {
         </div>
         <div className="flex items-center gap-5 p-2 font-extrabold cursor-pointer w-fit">
           <BiPlus className="bg-customRed text-3xl text-white rounded-full" />
-          <p className="text-lg text-white">Add Another Source Of Income</p>
+          <p className="text-lg text-black">Add Another Source Of Income</p>
         </div>
         <div className="ml-auto w-max">
           <Navigators handleNext={onNext} handlePrevious={onPrev} />

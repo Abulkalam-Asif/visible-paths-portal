@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import SummaryPageSingleComp from "./SummaryPageSingleComp";
 import { useRouter, useSearchParams } from "next/navigation";
 
@@ -7,47 +8,43 @@ const FormCompSummaryScreen = () => {
   const params = useSearchParams();
   const myParams = new URLSearchParams(params);
 
-  const screen1Data = JSON.parse(
-    localStorage.getItem("formDataScreen01") || "{}",
-  );
+  const [adjustedScreen1Data, setAdjustedScreen1Data] = useState({});
+  const [adjustedScreen2Data, setAdjustedScreen2Data] = useState({});
+  const [adjustedScreen3Data, setAdjustedScreen3Data] = useState({});
+  const [adjustedScreen4Data, setAdjustedScreen4Data] = useState({});
 
-  const screen2Data = JSON.parse(
-    localStorage.getItem("formDataScreen02") || "{}",
-  );
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Code to run only on the client side
+      const screen1Data = JSON.parse(localStorage.getItem("formDataScreen01") || "{}");
+      const screen2Data = JSON.parse(localStorage.getItem("formDataScreen02") || "{}");
+      const screen3Data = JSON.parse(localStorage.getItem("formDataScreen03") || "{}");
+      const screen4Data = JSON.parse(localStorage.getItem("formDataScreen04") || "{}");
 
-  const screen3Data = JSON.parse(
-    localStorage.getItem("formDataScreen03") || "{}",
-  );
+      setAdjustedScreen1Data({
+        Name: `${screen1Data.firstName || ""} ${screen1Data.lastName || ""}`,
+        Email: screen1Data.email || "",
+        "Phone Number": screen1Data.phone || "",
+      });
 
-  const screen4Data = JSON.parse(
-    localStorage.getItem("formDataScreen04") || "{}",
-  );
+      setAdjustedScreen2Data({
+        Address: `${screen2Data.address || ""} ${screen2Data.city || ""} ${screen2Data.state || ""} ${screen2Data.zip || ""}`,
+        "Time at Residence": screen2Data.livingTime || "",
+      });
 
-  // Create a new object with only the desired properties
-  const adjustedScreen1Data = {
-    Name: `${screen1Data.firstName || ""} ${screen1Data.lastName || ""}`,
-    Email: screen1Data.email || "",
-    "Phone Number": screen1Data.phone || "",
-  };
+      setAdjustedScreen3Data({
+        Status: screen3Data.employeStatus || "",
+        "Job Title": screen3Data.jobTitle || "",
+        "Time At Employer": screen3Data.experience || "",
+        "Monthly Income": screen3Data.montlyIncome || "",
+      });
 
-  const adjustedScreen2Data = {
-    Address: `${screen2Data.address || ""} ${screen2Data.city || ""} ${
-      screen2Data.state || ""
-    } ${screen2Data.zip || ""}`,
-    "Time at Residence": screen2Data.livingTime || "",
-  };
-
-  const adjustedScreen3Data = {
-    Status: screen3Data.employeStatus || "",
-    "Job Title": screen3Data.jobTitle || "",
-    "Time At Employer": screen3Data.experience || "",
-    "Monthly Income": screen3Data.montlyIncome || "",
-  };
-
-  const adjustedScreen4Data = {
-    "Social Security Number": screen4Data.securityNumber || "",
-    "Date of Birth": screen4Data.dob || "",
-  };
+      setAdjustedScreen4Data({
+        "Social Security Number": screen4Data.securityNumber || "",
+        "Date of Birth": screen4Data.dob || "",
+      });
+    }
+  }, []);
 
   const Next = () => {
     myParams.delete("page");
@@ -55,7 +52,7 @@ const FormCompSummaryScreen = () => {
   };
 
   return (
-    <div className="flex flex-col ~/sm:~gap-5/10">
+    <div className="flex flex-col justify-between items-center gap-8">
       <SummaryPageSingleComp
         title={"Personal"}
         dataItems={Object.keys(adjustedScreen1Data).map(key => {
@@ -99,7 +96,7 @@ const FormCompSummaryScreen = () => {
       <div className="flex w-full justify-center">
         <button
           onClick={Next}
-          className="self-center bg-customRed text-white py-4 px-3 rounded-lg text-xl">
+          className="self-center bg-customRed text-white py-4 px-3 rounded-lg text-xl font-bold">
           Submit Application
         </button>
       </div>

@@ -86,12 +86,12 @@ const LoanLeaseLayout = ({ children }: Props) => {
   return (
     <div>
       {myParams.get("page") === "signup" ? (
-        <div className="backdrop-blur-financeForm bg-[#737475]/30 border-white border-2 rounded-[36px] max-w-lg mx-auto">
-          <div className="p-10 flex flex-col items-center w-full ~/sm:~gap-7/14">
-            <h1 className="text-white ~/sm:~text-xl/4xl font-bold">
+        <div className="bg-white/80 border-customRed border-2 pb-2 rounded-2xl ~/lg:~px-4/12 max-w-lg mx-auto">
+          <div className=" py-2 flex flex-col items-center w-full ~/sm:~gap-7/14">
+            <h1 className="text-black text-center pt-2 ~/sm:~text-xl/3xl font-bold">
               Create Your Free Account
             </h1>
-            <div className="w-full flex flex-col ~/sm:~gap-4/8">
+            <div className="w-full flex flex-col justify-center items-between ~/sm:~gap-4/8">
               <div className="grid ~/sm:~gap-4/8 grid-cols-1 sm:grid-cols-2">
                 <FormInputBox
                   type="text"
@@ -163,16 +163,16 @@ const LoanLeaseLayout = ({ children }: Props) => {
                 className="bg-customRed ~/sm:~text-md/xl text-white font-bold w-full p-3 rounded-md">
                 CREATE ACCOUNT
               </button>
-              <button className="bg-transparent border-2 flex items-center justify-center gap-4 border-white/30 text-white font-bold w-full p-3 rounded-md">
+              <button className="bg-transparent border-2 flex items-center justify-center gap-4 border-black text-black font-bold w-full p-3 rounded-md">
                 <FcGoogle className="~/sm:~text-xl/2xl" />
                 <p className="~/sm:~text-md/xl">Continue With Google</p>
               </button>
-              <p className="text-center px-2">
+              <p className="text-center px-2 font-bold">
                 By signing up, you agree to our{" "}
                 <span className="text-customRed">Terms</span> of Service and{" "}
                 <span className="text-customRed">Privacy Policy</span>
               </p>
-              <p className="text-center px-2">
+              <p className="text-center px-2 font-bold">
                 Already have an account?{" "}
                 <span
                   className="text-customRed cursor-pointer"

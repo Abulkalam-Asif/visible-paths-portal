@@ -46,7 +46,7 @@ const FormInputBox = ({
             required={required}
             placeholder={placeholder}
             onChange={onChangeHandler}
-            className="px-4 py-3 text-sm border placeholder:text-black border-customRed rounded font-medium backdrop-blur-[50] bg-white/30"
+            className="px-4 py-3 text-sm border placeholder:text-black border-black rounded font-medium backdrop-blur-[50] bg-white/30"
           />
         ) : type === "textarea" ? (
           <textarea

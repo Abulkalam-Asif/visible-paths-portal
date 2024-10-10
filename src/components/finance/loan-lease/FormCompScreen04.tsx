@@ -51,12 +51,12 @@ const FormCompScreen04 = () => {
     myParams.set("page", newPage.toString());
     router.push("/finance/loan-lease?" + myParams.toString());
     return newPage.toString();
-  }; 
+  };
 
   return (
     <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}>
       <form>
-        <div className="grid grid-cols-1 sm:grid-cols-2 ~/sm:~gap-4/10 ~/lg:~px-4/12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
           <FormInputBox
             type="text"
             label="Social Security Number"
@@ -69,7 +69,7 @@ const FormCompScreen04 = () => {
           />
 
           <div className="flex flex-col gap-2.5">
-            <label className="font-bold text-white" htmlFor="dob">
+            <label className="font-bold text-black" htmlFor="dob">
               Date Of Birth
             </label>
             <input
@@ -78,7 +78,7 @@ const FormCompScreen04 = () => {
               value={formData.dob || ""}
               name="dob"
               required={true}
-              className="px-4 py-2.5 placeholder:text-white text-white text-sm border-2 border-white rounded font-medium backdrop-blur-[50] bg-white/30"
+              className="px-4 py-2.5 placeholder:text-black text-black text-sm border border-black rounded font-medium backdrop-blur-[50] bg-white/30"
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                 formDataInputHandler("dob", e.target.value);
               }}

@@ -12,7 +12,7 @@ const HomeClientPage = () => {
   return (
     <>
       <section className="min-h-screen h-auto bg-main bg-no-repeat bg-top bg-cover">
-        <div className="max-w-7xl mx-auto ~px-4/12 pb-4 ~/md:~pt-36/40 lg:pt-36">
+        <div className="max-w-5xl mx-auto ~px-4/12 pb-4 ~/md:~pt-36/40 lg:pt-36">
           <div className="flex flex-col items-center gap-4 sm:~sm:~gap-4/20 sm:flex-row sm:justify-center">
             <HomeLink
               text="Explore Finance"

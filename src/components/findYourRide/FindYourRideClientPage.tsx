@@ -20,12 +20,12 @@ const FindYourRideClientPage = () => {
   return (
     <>
       <section className="min-h-screen h-auto bg-survey bg-no-repeat bg-top bg-cover">
-        <div className="max-w-7xl mx-auto ~px-4/12 pb-4 ~/md:~pt-28/36 lg:~pt-24/32">
+        <div className="max-w-5xl mx-auto ~px-4/12 pb-4 ~/md:~pt-28/36 lg:~pt-24/32">
           <FindYourRideHeaderMob />
           <FindYourRideNavDes />
           <FindYourRideCarsDisplay />
         </div>
-        <div className="w-full max-w-7xl mx-auto ~px-4/12 fixed z-[11] ~bottom-4/6 left-1/2 -translate-x-1/2 flex items-center justify-between">
+        <div className="w-full max-w-5xl mx-auto ~px-4/12 fixed z-[11] ~bottom-4/6 left-1/2 -translate-x-1/2 flex items-center justify-between">
           <button className="bg-white p-3 rounded-xl">
             <FaArrowLeft className="text-customRed ~lg:~w-6/8 h-auto" />
           </button>
