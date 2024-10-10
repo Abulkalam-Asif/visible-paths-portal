@@ -35,6 +35,7 @@ const config: Config = {
       },
       backdropBlur: {
         financeForm: "10px",
+        surveyForm: "35px",
       },
       fontSize: {
         xxs: "0.625rem",
