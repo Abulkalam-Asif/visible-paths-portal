@@ -55,11 +55,11 @@ const FindYourRideNavDes = () => {
             <FaArrowLeft className="text-customRed ~lg:~w-6/8 h-auto" />
           </button>
           <div className="flex flex-col gap-2">
-            <div className="flex items-center gap-2 px-4 py-2 border border-white bg-white/30 backdrop-blur-md rounded-full text-white">
+            <div className="flex items-center gap-2 px-4 py-2 border border-customRed bg-white/80 backdrop-blur-md rounded-full text-black">
               <FaMagnifyingGlass className="~/sm:~w-3/4 h-auto" />
               <input
                 type="search"
-                className="bg-transparent outline-none text-xs placeholder:text-white font-semibold"
+                className="bg-transparent outline-none text-xs placeholder:text-black font-semibold"
                 placeholder="Search"
               />
             </div>

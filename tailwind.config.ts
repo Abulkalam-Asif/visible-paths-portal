@@ -39,6 +39,7 @@ const config: Config = {
       },
       fontSize: {
         xxs: "0.625rem",
+        "4.5xl": "2.5rem",
       },
     },
   },

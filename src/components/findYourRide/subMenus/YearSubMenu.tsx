@@ -28,7 +28,7 @@ const YearSubMenu = ({ year, setYear }: YearSubMenuProps) => {
               min={min}
               max={max}
               onChange={e => yearSettingHandler(+e.target.value, year[1])}
-              className="~w-12/24 text-center px-1 py-0.5 border-[0.5px] border-white bg-white/30 rounded-md"
+              className="~w-12/24 text-center px-1 py-0.5 border-[0.5px] border-black bg-white/80 rounded-md"
             />
           </div>
           <span className="pb-1">To</span>
@@ -40,7 +40,7 @@ const YearSubMenu = ({ year, setYear }: YearSubMenuProps) => {
               min={min}
               max={max}
               onChange={e => yearSettingHandler(year[0], +e.target.value)}
-              className="~w-12/24 text-center px-1 py-0.5 border-[0.5px] border-white bg-white/30 rounded-md"
+              className="~w-12/24 text-center px-1 py-0.5 border-[0.5px] border-black bg-white/80 rounded-md"
             />
           </div>
         </div>

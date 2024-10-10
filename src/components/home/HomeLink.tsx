@@ -24,7 +24,7 @@ const HomeLink = ({ href, text, circleImg }: HomeLinkProps) => {
           className="~sm:~w-32/56 h-auto"
           onLoad={() => setIsLoaded(true)}
         />
-        <span className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-full text-white text-center font-bold text-xl ~sm:~text-xl/5xl whitespace-break-spaces">
+        <span className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-full text-white text-center font-bold text-xl sm:~sm:~text-xl/4.5xl leading-none">
           {text}
         </span>
       </Link>

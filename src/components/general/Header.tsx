@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <>
       <header className="absolute top-0 left-0 right-0 bg-gradient-to-b from-black/100 to-black/0">
-        <div className="max-w-7xl mx-auto ~px-4/12 pt-2 pb-6 flex flex-col gap-1 lg:pt-4 lg:pb-0">
+        <div className="max-w-5xl mx-auto ~px-4/12 pt-2 pb-6 flex flex-col gap-2 lg:pt-4 lg:pb-0">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-6">
               <Link href={"/"}>
@@ -30,10 +30,10 @@ const Header = () => {
                   alt="VisiblePaths"
                   width={120}
                   height={120}
-                  className="~w-14/24 ~h-14/24"
+                  className="~w-14/20 ~h-14/20"
                 />
               </Link>
-              <h1 className="hidden lg:block ~lg:~text-3xl/4xl text-white font-bold">
+              <h1 className="hidden lg:block text-2xl text-white font-bold px-4 py-0.5 bg-[#4D5C69]/5 border-[0.1px] border-white/30 bg-blur-[2px] rounded">
                 {heading}
               </h1>
             </div>
@@ -43,7 +43,7 @@ const Header = () => {
             </div>
           </div>
           <div className="lg:hidden">
-            <h1 className="~/md:~text-2xl/3xl text-center text-white font-bold">
+            <h1 className="w-fit mx-auto px-4 py-0.5 bg-[#4D5C69]/5 border-[0.1px] border-white/30 bg-blur-[2px] rounded ~/md:~text-2xl/3xl text-center text-white font-bold">
               {heading}
             </h1>
           </div>

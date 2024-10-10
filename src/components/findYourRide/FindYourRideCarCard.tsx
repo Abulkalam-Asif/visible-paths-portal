@@ -41,7 +41,7 @@ const FindYourRideCarCard = ({
     <>
       <Link
         href={`/find-your-ride/compare/${id}`}
-        className="min-w-64 w-full py-3 border-[1.5px] border-white rounded-[10px] bg-white/30 backdrop-blur-[10px] text-white font-bold sm:w-1/2 lg:w-1/3">
+        className="min-w-64 w-full py-3 border border-customRed shadow-lg rounded-[10px] bg-white/80 backdrop-blur-[10px] font-bold sm:w-1/2 lg:w-1/3">
         <div className="px-3 xs:px-4">
           <div className="flex flex-row items-center justify-between">
             <span className="text-sm">{name}</span>

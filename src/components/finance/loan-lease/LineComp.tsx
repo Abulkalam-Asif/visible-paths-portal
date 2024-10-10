@@ -10,7 +10,7 @@ const LineComp = ({ width, isHighlighted }: Props) => {
     <div>
       <div
         className={`${width} ${
-          isHighlighted ? "bg-customRed" : "bg-gray-200"
+          isHighlighted ? "bg-customRed" : "bg-[#606367]"
         } h-1 transition-color duration-700 ease-in-out`}></div>
     </div>
   );
