@@ -1,8 +1,21 @@
 import React from "react";
 import carsData from "@/../public/temp/cars.json";
 import FindYourRideCarCard from "./FindYourRideCarCard";
+
+export type Car = {
+  id: string;
+  name: string;
+  price: string;
+  image: string;
+  mileage: string;
+  engine: string;
+  driven: string;
+  properties: string[];
+  seller: string;
+};
+
 const FindYourRideCarsDisplay = () => {
-  const carsPair = carsData.reduce((acc: any, car: any, index: number) => {
+  const carsPair = carsData.reduce((acc: Car[][], car: Car, index: number) => {
     if (index % 2 === 0) {
       acc.push([car]);
     } else {
@@ -18,9 +31,9 @@ const FindYourRideCarsDisplay = () => {
           Showing 1-8 of {carsData.length} listings
         </h3>
         <div className="custom-scrollbar h-auto overflow-x-auto flex gap-3 pr-2">
-          {carsPair.map((pair: any, index: number) => (
+          {carsPair.map((pair: Car[], index: number) => (
             <div key={index} className="flex flex-col gap-3">
-              {pair.map((car: any) => (
+              {pair.map((car: Car) => (
                 <FindYourRideCarCard key={car.id} {...car} />
               ))}
             </div>

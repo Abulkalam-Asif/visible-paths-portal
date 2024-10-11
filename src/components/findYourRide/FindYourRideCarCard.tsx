@@ -12,19 +12,9 @@ import { FiCheckCircle } from "react-icons/fi";
 import { GoHeart, GoHeartFill } from "react-icons/go";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { Car } from "./FindYourRideCarsDisplay";
 
-type FindYourRideCarCardProps = {
-  id: string;
-  name: string;
-  price: string;
-  image: string;
-  mileage: string;
-  engine: string;
-  driven: string;
-  properties: string[];
-  seller: string;
-};
-
+type FindYourRideCarCardProps = Car;
 const FindYourRideCarCard = ({
   id,
   name,
@@ -79,15 +69,33 @@ const FindYourRideCarCard = ({
         <div className="px-2 space-y-2">
           <div className="flex items-center gap-1 text-[6px] whitespace-nowrap flex-wrap">
             <p className="flex items-center gap-1">
-              <Image src={mileage2Icon} alt="Mileage" width={16} height={16} className="h-2.5 w-auto"/>
+              <Image
+                src={mileage2Icon}
+                alt="Mileage"
+                width={16}
+                height={16}
+                className="h-2.5 w-auto"
+              />
               <span>{mileage}</span>
             </p>
             <p className="flex items-center gap-1">
-              <Image src={engine2Icon} alt="Engine" width={16} height={16} className="h-2.5 w-auto"/>
+              <Image
+                src={engine2Icon}
+                alt="Engine"
+                width={16}
+                height={16}
+                className="h-2.5 w-auto"
+              />
               <span>{engine}</span>
             </p>
             <p className="flex items-center gap-1">
-              <Image src={drivenIcon} alt="Driven" width={16} height={16} className="h-2.5 w-auto"/>
+              <Image
+                src={drivenIcon}
+                alt="Driven"
+                width={16}
+                height={16}
+                className="h-2.5 w-auto"
+              />
               <span>{driven}</span>
             </p>
           </div>
@@ -105,7 +113,13 @@ const FindYourRideCarCard = ({
             </ul>
           </div>
           <div className="flex items-center gap-1 text-xxxs">
-            <Image src={locationIcon} alt="Location" width={12} height={12} className="w-3 h-auto"/>
+            <Image
+              src={locationIcon}
+              alt="Location"
+              width={12}
+              height={12}
+              className="w-3 h-auto"
+            />
             <span>{seller}</span>
           </div>
           <div className="flex items-center text-xxxs gap-1">

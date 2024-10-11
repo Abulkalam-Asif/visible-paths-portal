@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import FindYourRideHeaderMob from "./FindYourRideHeaderMob";
 import FindYourRideNavDes from "./FindYourRideNavDes";
 import FindYourRideCarsDisplay from "./FindYourRideCarsDisplay";
-import { FaArrowLeft } from "react-icons/fa";
 import Image from "next/image";
 import { chatbotIcon } from "@/assets/images";
 import FindYourRideChat from "./FindYourRideChat";
