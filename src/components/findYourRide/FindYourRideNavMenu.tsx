@@ -9,14 +9,6 @@ import {
   fuelTypeIcon,
   engineIcon,
   transmissionIcon,
-  priceWhiteIcon,
-  yearWhiteIcon,
-  mileageWhiteIcon,
-  locationWhiteIcon,
-  colorWhiteIcon,
-  fuelTypeWhiteIcon,
-  engineWhiteIcon,
-  transmissionWhiteIcon,
 } from "@/assets/images";
 import FindYourRideNavMenuBtn from "./FindYourRideNavMenuBtn";
 import { motion } from "framer-motion";
@@ -33,42 +25,34 @@ import TransmissionSubMenu from "./subMenus/TransmissionSubMenu";
 const menuMetadata = {
   price: {
     icon: priceIcon,
-    subMenuIcon: priceWhiteIcon,
     text: "Price",
   },
   year: {
     icon: yearIcon,
-    subMenuIcon: yearWhiteIcon,
     text: "Year",
   },
   mileage: {
     icon: mileageIcon,
-    subMenuIcon: mileageWhiteIcon,
     text: "Mileage",
   },
   location: {
     icon: locationIcon,
-    subMenuIcon: locationWhiteIcon,
     text: "Location",
   },
   color: {
     icon: colorIcon,
-    subMenuIcon: colorWhiteIcon,
     text: "Color",
   },
   fuelType: {
     icon: fuelTypeIcon,
-    subMenuIcon: fuelTypeWhiteIcon,
     text: "Fuel Type",
   },
   engine: {
     icon: engineIcon,
-    subMenuIcon: engineWhiteIcon,
     text: "Engine",
   },
   transmission: {
     icon: transmissionIcon,
-    subMenuIcon: transmissionWhiteIcon,
     text: "Transmission",
   },
 };
@@ -104,7 +88,7 @@ const FindYourRideNavMenu = () => {
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.5 }}
         transition={{ duration: 0.1 }}
-        className="absolute w-max top-[calc(100%+.5rem)] right-0 border border-customRed bg-white/80 backdrop-blur-md rounded-md px-1 py-3 grid grid-cols-2 ~gap-x-0.5/1 ~gap-y-3/5">
+        className="absolute w-max top-[calc(100%+.5rem)] right-0 border-[1.5px] border-black/60 bg-white/80 backdrop-blur-md rounded-2xl px-1 py-3 grid grid-cols-2 ~gap-x-0.5/1 ~gap-y-3/5">
         {Object.keys(menuMetadata).map((key, index) => {
           const { icon, text } = menuMetadata[key as keyof typeof menuMetadata];
           return (
@@ -122,7 +106,7 @@ const FindYourRideNavMenu = () => {
         {subMenuOpenType && (
           <FindYourRideSubMenuLayout
             heading={menuMetadata[subMenuOpenType].text}
-            icon={menuMetadata[subMenuOpenType].subMenuIcon}>
+            icon={menuMetadata[subMenuOpenType].icon}>
             {subMenuOpenType === "price" && (
               <PriceSubMenu price={price} setPrice={setPrice} />
             )}

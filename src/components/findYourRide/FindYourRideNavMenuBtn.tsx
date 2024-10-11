@@ -18,14 +18,14 @@ const FindYourRideNavMenuBtn = ({
     <>
       <button
         onClick={() => onClick(type)}
-        className="flex flex-col items-center ~text-xxs/xs font-medium gap-1">
-        <span className="bg-white/30 border-[0.5px] border-customRed text-black px-1 py-2 rounded-lg shadow-[0px_0px_14.24px_0px_rgba(0,0,0,0.2)]">
+        className="flex flex-col items-center text-xxxs font-medium gap-1">
+        <span className="bg-white/30 border-[0.5px] border-white text-black px-1 py-2 rounded-lg shadow-[0px_0px_14.24px_0px_rgba(0,0,0,0.2)]">
           <Image
             src={icon}
             alt={text}
             width={24}
             height={24}
-            className="~w-6/10 ~h-6/10"
+            className="~w-6/8 ~h-6/8"
           />
         </span>
         <span className="text-black font-semibold">{text}</span>

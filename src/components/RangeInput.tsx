@@ -26,7 +26,7 @@ const RangeInput = ({
   return (
     <>
       <div className="~w-32/60">
-        <div className="flex items-center justify-between font-bold ~text-sm/base">
+        <div className="flex items-center justify-between font-bold text-sm">
           <label htmlFor={idHtmlFor}>{label}</label>
           <span>{`${value} ${unit}`}</span>
         </div>
