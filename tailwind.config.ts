@@ -38,6 +38,7 @@ const config: Config = {
         surveyForm: "35px",
       },
       fontSize: {
+        xxxs: "0.5rem",
         xxs: "0.625rem",
         "4.5xl": "2.5rem",
       },

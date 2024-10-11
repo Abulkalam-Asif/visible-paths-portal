@@ -2,15 +2,28 @@ import React from "react";
 import carsData from "@/../public/temp/cars.json";
 import FindYourRideCarCard from "./FindYourRideCarCard";
 const FindYourRideCarsDisplay = () => {
+  const carsPair = carsData.reduce((acc: any, car: any, index: number) => {
+    if (index % 2 === 0) {
+      acc.push([car]);
+    } else {
+      acc[acc.length - 1].push(car);
+    }
+    return acc;
+  }, []);
+
   return (
     <>
-      <div className="bg-white/80 border-[3px] border-customRed rounded-[2rem] backdrop-blur-md text-black px-8 pt-2 pb-4 mt-6 max-w-6xl mx-auto lg:px-10 lg:pt-4">
-        <h3 className="font-bold mb-4">
+      <div className="max-w-3xl mr-auto bg-white/80 border-[3px] border-black/60 rounded-2xl backdrop-blur-md text-black px-8 pt-2 pb-4 mt-4 lg:px-10">
+        <h3 className="font-bold text-xs mb-4">
           Showing 1-8 of {carsData.length} listings
         </h3>
-        <div className="custom-scrollbar max-h-[55vh] overflow-x-auto flex gap-4 pr-2">
-          {carsData.map((car, index) => (
-            <FindYourRideCarCard key={index} {...car} />
+        <div className="custom-scrollbar h-auto overflow-x-auto flex gap-3 pr-2">
+          {carsPair.map((pair: any, index: number) => (
+            <div key={index} className="flex flex-col gap-3">
+              {pair.map((car: any) => (
+                <FindYourRideCarCard key={car.id} {...car} />
+              ))}
+            </div>
           ))}
         </div>
       </div>

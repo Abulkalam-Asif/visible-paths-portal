@@ -22,17 +22,9 @@ export { default as mileageIcon } from "./findYourRide/mileage.svg";
 export { default as priceIcon } from "./findYourRide/price.svg";
 export { default as transmissionIcon } from "./findYourRide/transmission.svg";
 export { default as yearIcon } from "./findYourRide/year.svg";
-export { default as colorWhiteIcon } from "./findYourRide/colorWhite.svg";
-export { default as engineWhiteIcon } from "./findYourRide/engineWhite.svg";
-export { default as fuelTypeWhiteIcon } from "./findYourRide/fuelTypeWhite.svg";
-export { default as locationWhiteIcon } from "./findYourRide/locationWhite.svg";
-export { default as mileageWhiteIcon } from "./findYourRide/mileageWhite.svg";
-export { default as priceWhiteIcon } from "./findYourRide/priceWhite.svg";
-export { default as transmissionWhiteIcon } from "./findYourRide/transmissionWhite.svg";
-export { default as yearWhiteIcon } from "./findYourRide/yearWhite.svg";
-export { default as mileageWhite2Icon } from "./findYourRide/mileageWhite2.svg";
-export { default as engineWhite2Icon } from "./findYourRide/engineWhite2.svg";
-export { default as drivenWhiteIcon } from "./findYourRide/drivenWhite.svg";
+export { default as mileage2Icon } from "./findYourRide/mileage2.svg";
+export { default as engine2Icon } from "./findYourRide/engine2.svg";
+export { default as drivenIcon } from "./findYourRide/driven.svg";
 export { default as autoCheckIcon } from "./findYourRide/autoCheck.webp";
 
 // Find your ride - Compare

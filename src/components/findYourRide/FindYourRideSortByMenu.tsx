@@ -60,13 +60,13 @@ const FindYourRideSortByMenu = () => {
           <button
             key={index}
             onClick={() => setSortOption(item.value)}
-            className={`relative text-left w-full ~text-xs/lg font-semibold ~py-1/2 ~px-2/4 rounded ${
+            className={`relative text-left w-full text-xs font-semibold ~py-1/2 px-2 rounded ${
               sortOption === item.value ? "bg-customRed text-white" : ""
-            }`}>
+            } xl:text-sm`}>
             {sortOption === item.value && (
-              <FiCheckCircle className="absolute text-white ~left-2/4 top-1/2 -translate-y-1/2" />
+              <FiCheckCircle className="absolute text-white left-2 top-1/2 -translate-y-1/2 xl:left-3" />
             )}
-            <span className="~pl-5/7">{item.label}</span>
+            <span className="pl-5 xl:pl-6">{item.label}</span>
           </button>
         ))}
       </motion.div>

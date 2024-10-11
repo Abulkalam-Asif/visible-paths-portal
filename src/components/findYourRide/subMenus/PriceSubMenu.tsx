@@ -19,7 +19,7 @@ const PriceSubMenu = ({ price, setPrice }: PriceSubMenuProps) => {
   return (
     <>
       <div className="flex flex-col gap-2 px-2">
-        <div className="flex items-end gap-2 ~text-xs/base font-bold">
+        <div className="flex items-end gap-2 ~text-xs/sm font-bold">
           <div className="flex flex-col items-center gap-1">
             <span>Min ($)</span>
             <input
@@ -28,7 +28,7 @@ const PriceSubMenu = ({ price, setPrice }: PriceSubMenuProps) => {
               min={min}
               max={max}
               onChange={e => priceSettingHandler(+e.target.value, price[1])}
-              className="~w-12/24 text-center px-1 py-0.5 border-[0.5px] border-black bg-white/80 rounded-md"
+              className="~w-12/18 text-center px-1 py-0.5 border-[0.5px] border-black bg-white/80 rounded-md"
             />
           </div>
           <span className="pb-1">To</span>
@@ -40,7 +40,7 @@ const PriceSubMenu = ({ price, setPrice }: PriceSubMenuProps) => {
               min={min}
               max={max}
               onChange={e => priceSettingHandler(price[0], +e.target.value)}
-              className="~w-12/24 text-center px-1 py-0.5 border-[0.5px] border-black bg-white/80 rounded-md"
+              className="~w-12/18 text-center px-1 py-0.5 border-[0.5px] border-black bg-white/80 rounded-md"
             />
           </div>
         </div>

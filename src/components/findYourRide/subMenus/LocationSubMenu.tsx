@@ -1,4 +1,4 @@
-import { locationWhiteIcon } from "@/assets/images";
+import { locationIcon } from "@/assets/images";
 import Image from "next/image";
 import React from "react";
 import RangeInput from "../../RangeInput";
@@ -27,9 +27,9 @@ const LocationSubMenu = ({
     <div className="flex flex-col gap-2 px-2">
       <button
         onClick={locationSettingHandler}
-        className="w-fit flex items-center ~text-sm/base gap-2 font-semibold px-3 py-1 border-[0.5px] border-black bg-white/80 rounded-md">
+        className="w-fit flex items-center text-sm gap-2 font-semibold px-3 py-1 border-[0.5px] border-black bg-white/80 rounded-md">
         <Image
-          src={locationWhiteIcon}
+          src={locationIcon}
           alt="Location"
           className="w-4 h-auto"
           width={24}

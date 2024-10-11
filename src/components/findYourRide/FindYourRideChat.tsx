@@ -77,7 +77,7 @@ const FindYourRideChat = ({ closeChat }: FindYourRideChatProps) => {
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.5 }}
         transition={{ duration: 0.1 }}
-        className="text-white absolute z-[12] bottom-[calc(100%+.5rem)] overflow-hidden right-4 w-4/5 max-w-lg border border-white rounded-xl">
+        className="text-white absolute z-[12] bottom-[calc(100%+.5rem)] overflow-hidden right-4 w-4/5 max-w-sm border border-white rounded-xl">
         <div className="bg-customRed px-6 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <Image
@@ -85,11 +85,11 @@ const FindYourRideChat = ({ closeChat }: FindYourRideChatProps) => {
               alt="person"
               width={100}
               height={100}
-              className="w-8 h-8 rounded-full"
+              className="w-6 h-6 rounded-full"
             />
             <div className="flex flex-col items-start">
-              <span className="text-lg font-bold">Let&apos;s Chat!</span>
-              <span className="text-sm">Online</span>
+              <span className="text-sm font-bold">Let&apos;s Chat!</span>
+              <span className="text-xs">Online</span>
             </div>
           </div>
           <div>
@@ -98,10 +98,10 @@ const FindYourRideChat = ({ closeChat }: FindYourRideChatProps) => {
             </button>
           </div>
         </div>
-        <div className="flex flex-col bg-white/80 backdrop-blur-md px-3">
+        <div className="flex flex-col bg-[#F6F4F1] px-3">
           <div
             ref={messagesDivRef}
-            className="custom-scrollbar flex flex-col gap-4 py-5 max-h-[50vh] overflow-y-auto">
+            className="custom-scrollbar flex flex-col gap-3 py-3 max-h-[50vh] overflow-y-auto">
             {messages.map(({ message, sender }, index) => (
               <FindYourRideChatMessage
                 key={index}
@@ -110,11 +110,11 @@ const FindYourRideChat = ({ closeChat }: FindYourRideChatProps) => {
               />
             ))}
           </div>
-          <div className="flex gap-2 my-4 rounded-full border border-black text-black px-4">
+          <div className="flex gap-2 mb-4 mt-2 rounded-full border border-[#C7C7C7] bg-white text-black px-4">
             <input
               type="text"
               placeholder="Type a reply..."
-              className="bg-transparent outline-none placeholder:text-black py-2.5 text-sm w-full"
+              className="bg-transparent outline-none placeholder:text-black py-2.5 text-xs w-full"
             />
             <button>
               <MdOutlineGif className="w-5 h-auto border border-black rounded" />
