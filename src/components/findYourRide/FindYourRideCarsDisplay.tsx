@@ -33,7 +33,7 @@ const FindYourRideCarsDisplay = () => {
         <div className="custom-scrollbar h-auto overflow-x-auto flex gap-3 pr-2">
           {carsPair.map((pair: Car[], index: number) => (
             <div key={index} className="flex flex-col gap-3">
-              {pair.map((car: any) => (
+              {pair.map((car: Car) => (
                 <FindYourRideCarCard key={car.id} {...car} />
               ))}
             </div>
