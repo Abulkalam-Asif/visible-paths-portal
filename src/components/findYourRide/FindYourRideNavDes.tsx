@@ -71,12 +71,16 @@ const FindYourRideNavDes = () => {
           <div>
             <svg
               width="100"
-              height="70"
-              viewBox="0 0 100 70"
+              height="67"
+              viewBox="0 0 100 67"
               fill="none"
               className="w-fit lg:~lg:~h-[3.25rem]/[5.5rem]"
               xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0H124V66H35L0 0Z" fill="#B22234" />
+              <path
+                d="M0 0H124V66H35L0 0Z"
+                fill="#B22234"
+                className="lg:~lg:~h-[3.25rem]/[5.5rem]"
+              />
             </svg>
             <div className="relative">
               <FindYourRideNavMenu />

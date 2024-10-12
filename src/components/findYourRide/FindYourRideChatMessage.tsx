@@ -13,16 +13,16 @@ const FindYourRideChatMessage = ({
 }: FindYourRideChatMessageProps) => {
   return (
     <>
-      <div className="text-xs">
+      <div className="text-xs lg:~lg:~text-xs/xl">
         {sender === "bot" ? (
-          <div className="flex items-end gap-2">
+          <div className="flex items-end ~gap-2/4">
             <span>
               <Image
                 src={logoIcon}
                 alt="logo"
                 width={100}
                 height={100}
-                className="w-6 h-auto"
+                className="w-6 h-auto lg:~lg:~w-6/8"
               />
             </span>
             <span className="bg-transparent border border-[#C7C7C7] bg-white text-black px-4 py-1.5 rounded-sm w-4/5">

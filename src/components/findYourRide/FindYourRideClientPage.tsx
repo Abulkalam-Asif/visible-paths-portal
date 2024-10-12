@@ -19,7 +19,7 @@ const FindYourRideClientPage = () => {
   return (
     <>
       <section className="min-h-screen h-auto bg-survey bg-no-repeat bg-center bg-cover">
-        <div className="~lg:~max-w-3xl/7xl mx-auto ~px-4/12 pb-4 ~/md:~pt-28/36 lg:~lg:~pt-28/56">
+        <div className="~lg:~max-w-3xl/7xl mx-auto ~px-4/12 pb-4 ~/md:~pt-32/40 lg:~lg:~pt-28/56">
           <FindYourRideHeaderMob />
           <FindYourRideNavDes />
           <FindYourRideCarsDisplay />
@@ -36,7 +36,7 @@ const FindYourRideClientPage = () => {
               alt="chatbot"
               width={80}
               height={80}
-              className="w-6 h-auto"
+              className="w-6 h-auto lg:~lg:~w-7/14 lg:~lg:~h-7/14"
             />
           </button>
           {isChatOpen && <FindYourRideChat closeChat={closeChat} />}

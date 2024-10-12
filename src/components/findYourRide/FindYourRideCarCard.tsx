@@ -30,11 +30,11 @@ const FindYourRideCarCard = ({
   return (
     <>
       <div className="w-full py-3 border-[0.5px] border-customCream shadow-lg rounded bg-white backdrop-blur-[10px] font-bold">
-        <div className="px-3">
+        <div className="px-3 mb-1">
           <div className="flex flex-row items-center justify-between">
             <Link
               href={`/find-your-ride/compare/${id}`}
-              className="text-xxs hover:underline">
+              className="text-xxs hover:underline lg:~lg:~text-xxs/sm">
               {name}
             </Link>
             {isFavourite && (
@@ -54,27 +54,27 @@ const FindYourRideCarCard = ({
               </motion.button>
             )}
           </div>
-          <span className="text-sm">${price}</span>
+          <span className="text-sm lg:~lg:~text-sm/base">${price}</span>
         </div>
-        <div className="w-auto h-12 mx-auto">
+        <div className="flex justify-center">
           <Image
             src={image}
             alt={name}
-            className="w-full h-full object-contain"
-            width={300}
+            className="w-auto h-12 mx-center"
+            width={200}
             height={200}
           />
         </div>
         <hr className="bg-white my-3" />
         <div className="px-2 space-y-2">
-          <div className="flex items-center gap-1 text-[6px] whitespace-nowrap flex-wrap">
+          <div className="flex items-center gap-1 text-xxxs whitespace-nowrap flex-wrap lg:~lg:~text-xxxs/xs">
             <p className="flex items-center gap-1">
               <Image
                 src={mileage2Icon}
                 alt="Mileage"
                 width={16}
                 height={16}
-                className="h-2.5 w-auto"
+                className="h-2.5 w-auto lg:~lg:~h-2.5/4"
               />
               <span>{mileage}</span>
             </p>
@@ -84,7 +84,7 @@ const FindYourRideCarCard = ({
                 alt="Engine"
                 width={16}
                 height={16}
-                className="h-2.5 w-auto"
+                className="h-2.5 w-auto lg:~lg:~h-2.5/4"
               />
               <span>{engine}</span>
             </p>
@@ -94,14 +94,14 @@ const FindYourRideCarCard = ({
                 alt="Driven"
                 width={16}
                 height={16}
-                className="h-2.5 w-auto"
+                className="h-2.5 w-auto lg:~lg:~h-2.5/4"
               />
               <span>{driven}</span>
             </p>
           </div>
-          <div className="flex items-center gap-1 text-[6px]">
+          <div className="flex items-center gap-1 text-xxxs lg:~lg:~text-xxxs/xs">
             <FiCheckCircle className="w-3 h-auto" />
-            <ul className="flex items-center">
+            <ul className="flex items-center flex-wrap">
               {properties.map((property, index) => (
                 <li key={index}>
                   {property}
@@ -112,23 +112,23 @@ const FindYourRideCarCard = ({
               ))}
             </ul>
           </div>
-          <div className="flex items-center gap-1 text-xxxs">
+          <div className="flex items-center gap-1 text-xxxs lg:~lg:~text-xxxs/xs">
             <Image
               src={locationIcon}
               alt="Location"
               width={12}
               height={12}
-              className="w-3 h-auto"
+              className="w-3 h-auto lg:~lg:~w-3/4"
             />
             <span>{seller}</span>
           </div>
-          <div className="flex items-center text-xxxs gap-1">
+          <div className="flex items-center gap-1 text-xxxs lg:~lg:~text-xxxs/xs">
             <Image
               src={autoCheckIcon}
               alt="AutoCheck"
               width={150}
               height={150}
-              className="h-4 w-auto"
+              className="h-4 w-auto lg:~lg:~h-4/6"
             />
             <span>Vehicle history report</span>
           </div>

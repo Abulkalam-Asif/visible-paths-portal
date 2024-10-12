@@ -77,7 +77,7 @@ const FindYourRideChat = ({ closeChat }: FindYourRideChatProps) => {
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.5 }}
         transition={{ duration: 0.1 }}
-        className="text-white absolute z-[12] bottom-[calc(100%+.5rem)] overflow-hidden right-4 w-4/5 max-w-sm border border-white rounded-xl">
+        className="text-white absolute z-[12] bottom-[calc(100%+.5rem)] overflow-hidden right-4 w-full ~lg:~max-w-[20rem]/[30rem] border border-white rounded-xl">
         <div className="bg-customRed px-6 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <Image
@@ -85,11 +85,13 @@ const FindYourRideChat = ({ closeChat }: FindYourRideChatProps) => {
               alt="person"
               width={100}
               height={100}
-              className="w-6 h-6 rounded-full"
+              className="w-6 h-6 rounded-full lg:~lg:~w-6/10 lg:~lg:~h-6/10"
             />
             <div className="flex flex-col items-start">
-              <span className="text-sm font-bold">Let&apos;s Chat!</span>
-              <span className="text-xs">Online</span>
+              <span className="text-sm font-bold lg:~lg:~text-sm/lg">
+                Let&apos;s Chat!
+              </span>
+              <span className="text-xs lg:~lg:~text-xs/base">Online</span>
             </div>
           </div>
           <div>
@@ -101,7 +103,7 @@ const FindYourRideChat = ({ closeChat }: FindYourRideChatProps) => {
         <div className="flex flex-col bg-[#F6F4F1] px-3">
           <div
             ref={messagesDivRef}
-            className="custom-scrollbar flex flex-col gap-3 py-3 max-h-[50vh] overflow-y-auto">
+            className="custom-scrollbar flex flex-col ~gap-3/5 py-3 max-h-[50vh] overflow-y-auto">
             {messages.map(({ message, sender }, index) => (
               <FindYourRideChatMessage
                 key={index}
@@ -114,16 +116,16 @@ const FindYourRideChat = ({ closeChat }: FindYourRideChatProps) => {
             <input
               type="text"
               placeholder="Type a reply..."
-              className="bg-transparent outline-none placeholder:text-black py-2.5 text-xs w-full"
+              className="bg-transparent outline-none placeholder:text-black py-2.5 text-xs w-full lg:~lg:~text-xs/lg"
             />
             <button>
-              <MdOutlineGif className="w-5 h-auto border border-black rounded" />
+              <MdOutlineGif className="w-5 h-auto border border-black rounded lg:~lg:~w-5/7" />
             </button>
             <button>
-              <CiFaceSmile className="w-5 h-auto" />
+              <CiFaceSmile className="w-5 h-auto lg:~lg:~w-5/7" />
             </button>
             <button>
-              <IoIosAttach className="w-5 h-auto" />
+              <IoIosAttach className="w-5 h-auto lg:~lg:~w-5/7" />
             </button>
           </div>
         </div>
