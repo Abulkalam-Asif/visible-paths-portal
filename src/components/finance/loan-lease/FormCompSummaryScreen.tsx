@@ -52,7 +52,7 @@ const FormCompSummaryScreen = () => {
   };
 
   return (
-    <div className="flex flex-col justify-between items-center gap-8">
+    <div className="flex flex-col justify-between items-center gap-3">
       <SummaryPageSingleComp
         title={"Personal"}
         dataItems={Object.keys(adjustedScreen1Data).map(key => {

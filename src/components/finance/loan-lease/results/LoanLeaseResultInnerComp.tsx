@@ -4,9 +4,9 @@ import React from "react";
 
 const LoanLeaseResultInnerComp = () => {
   return (
-    <div className="backdrop-blur-financeForm bg-[#737475]/30 border-white border-2 p-5 rounded-[36px]">
+    <div className="bg-[rgba(246,244,241,1)] p-5 rounded-[36px]">
       <div className="flex flex-col justify-between items-center ~/sm:~gap-5/8">
-        <h1 className="text-white text-center font-extrabold ~/sm:~text-xl/4xl">
+        <h1 className="text-center font-extrabold ~/sm:~text-xl/3xl lg:~lg:~text-3xl/4xl text-black">
           Nice Job! Your Information is Successfully Submitted
         </h1>
         <Image

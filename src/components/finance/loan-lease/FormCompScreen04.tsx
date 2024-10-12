@@ -56,7 +56,7 @@ const FormCompScreen04 = () => {
   return (
     <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}>
       <form>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6 lg:~lg:~gap-x-10/20 lg:~lg:~gap-y-6/12">
           <FormInputBox
             type="text"
             label="Social Security Number"
@@ -68,8 +68,8 @@ const FormCompScreen04 = () => {
             required={true}
           />
 
-          <div className="flex flex-col gap-2.5">
-            <label className="font-bold text-black" htmlFor="dob">
+          <div className="flex flex-col gap-2.5 lg:~lg:~gap-2.5/7">
+            <label className="font-bold lg:~lg:~text-md/lg text-black" htmlFor="dob">
               Date Of Birth
             </label>
             <input
@@ -78,7 +78,7 @@ const FormCompScreen04 = () => {
               value={formData.dob || ""}
               name="dob"
               required={true}
-              className="px-4 py-2.5 placeholder:text-black text-black text-sm border border-black rounded font-medium backdrop-blur-[50] bg-white/30"
+              className="px-4 py-2.5 placeholder:text-black text-black text-sm lg:~lg:~text-sm/lg border border-black rounded font-medium backdrop-blur-[50] bg-white/30"
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                 formDataInputHandler("dob", e.target.value);
               }}

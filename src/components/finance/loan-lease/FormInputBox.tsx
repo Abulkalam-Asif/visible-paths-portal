@@ -33,8 +33,8 @@ const FormInputBox = ({
 
   return (
     <>
-      <div className={`${className} flex flex-col gap-2.5`}>
-        <label htmlFor={idHtmlFor} className="font-bold">
+      <div className={`${className} flex flex-col gap-2.5 lg:~lg:~gap-2.5/7`}>
+        <label htmlFor={idHtmlFor} className="font-bold lg:~lg:~text-md/lg">
           {label} {required && <span className="text-accent1">*</span>}
         </label>
         {type === "text"|| type === "password" || type === "email" || type === "tel" ? (
@@ -46,7 +46,7 @@ const FormInputBox = ({
             required={required}
             placeholder={placeholder}
             onChange={onChangeHandler}
-            className="px-4 py-3 text-sm border placeholder:text-black border-black rounded font-medium backdrop-blur-[50] bg-white/30"
+            className="px-4 py-3 text-sm lg:~lg:~text-sm/lg border placeholder:text-black border-black rounded font-medium backdrop-blur-[50] bg-white/30"
           />
         ) : type === "textarea" ? (
           <textarea

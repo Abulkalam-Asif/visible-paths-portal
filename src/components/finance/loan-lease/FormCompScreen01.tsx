@@ -65,7 +65,7 @@ const FormCompScreen01 = () => {
   return (
     <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}>
       <form>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6 lg:~lg:~gap-x-10/20 lg:~lg:~gap-y-6/12">
           <FormInputBox
             type="text"
             label="First Name"
