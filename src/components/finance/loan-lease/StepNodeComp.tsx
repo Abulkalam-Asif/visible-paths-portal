@@ -16,7 +16,7 @@ const StepNodeComp = ({ nodeNumber, title, isHighlighted }: Props) => {
         {nodeNumber}
       </div>
       <div
-        className={`hidden sm:block absolute top-full translate-y-1 font-bold whitespace-nowrap text-sm  ${
+        className={`hidden sm:block absolute top-full translate-y-1 font-bold whitespace-nowrap text-sm lg:~lg:~text-sm/lg  ${
           isHighlighted ? "text-customRed" : ""
         }`}>
         {title}

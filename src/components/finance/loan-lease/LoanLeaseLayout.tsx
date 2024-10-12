@@ -86,12 +86,12 @@ const LoanLeaseLayout = ({ children }: Props) => {
   return (
     <div>
       {myParams.get("page") === "signup" ? (
-        <div className="bg-white/80 border-customRed border-2 pb-2 rounded-2xl ~/lg:~px-4/12 max-w-lg mx-auto">
-          <div className=" py-2 flex flex-col items-center w-full ~/sm:~gap-7/14">
-            <h1 className="text-black text-center pt-2 ~/sm:~text-xl/3xl font-bold">
+        <div className="bg-[rgba(246,244,241,1)] pb-2 rounded-2xl ~/lg:~px-4/12 max-w-lg mx-auto">
+          <div className=" py-2 flex flex-col items-center w-full ~/sm:~gap-4/10">
+            <h1 className="text-black text-center pt-2 ~/sm:~text-xl/3xl lg:~lg:~text-3xl/4xl font-bold">
               Create Your Free Account
             </h1>
-            <div className="w-full flex flex-col justify-center items-between ~/sm:~gap-4/8">
+            <div className="w-full flex flex-col justify-center items-between ~/sm:~gap-2/3">
               <div className="grid ~/sm:~gap-4/8 grid-cols-1 sm:grid-cols-2">
                 <FormInputBox
                   type="text"
@@ -184,10 +184,10 @@ const LoanLeaseLayout = ({ children }: Props) => {
           </div>
         </div>
       ) : (
-        <div className="bg-white/80 border-customRed border-2 pt-7 pb-2 rounded-2xl ~/lg:~px-4/12">
+        <div className="bg-[rgba(246,244,241,1)] pt-7 pb-2 rounded-2xl ~/lg:~px-4/12">
           <div className="flex flex-col justify-between items-center gap-8">
             <div className="w-full flex justify-center items-center">
-              <h1 className="text-black font-bold ~/sm:~text-xl/3xl">
+              <h1 className="text-black text-center font-bold ~/sm:~text-xl/3xl lg:~lg:~text-3xl/4xl">
                 {titleArray[currentPage]}
               </h1>
             </div>
@@ -204,7 +204,7 @@ const LoanLeaseLayout = ({ children }: Props) => {
                   />
                   {index !== stepJson.length - 1 && (
                     <LineComp
-                      width="~/lg:~w-4/32"
+                      width="~/lg:~w-4/32 lg:~lg:~w-32/44"
                       isHighlighted={
                         currentPage !== 1 && currentPage > step.node_number
                       }
@@ -214,7 +214,7 @@ const LoanLeaseLayout = ({ children }: Props) => {
               ))}
             </div>
           </div>
-          <div className="mt-10">{children}</div>
+          <div className="lg:~lg:~mt-10/20 mt-10">{children}</div>
         </div>
       )}
     </div>

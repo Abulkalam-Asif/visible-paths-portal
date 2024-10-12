@@ -128,7 +128,7 @@ const FormCompScreen02 = () => {
             placeholder="Live there?"
             required={true}
           />
-          <div className="p-2 max-w-full">
+          <div className="p-2 lg:~lg:~p-2/5 max-w-full">
             <label htmlFor={"wish"} className="font-bold text-black text-xl">
               Do you own or rent ? <span className="text-accent1">*</span>
             </label>
