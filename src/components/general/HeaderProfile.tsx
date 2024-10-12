@@ -7,7 +7,7 @@ const HeaderProfile = () => {
     <>
       <div>
         <button className="flex items-center justify-center">
-          <FaUser size={24} className="w-8 h-auto text-white" />
+          <FaUser size={24} className="w-8 h-auto text-white lg:~lg:~w-8/14" />
         </button>
       </div>
     </>

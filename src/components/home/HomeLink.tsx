@@ -21,10 +21,10 @@ const HomeLink = ({ href, text, circleImg }: HomeLinkProps) => {
           alt={text}
           width={300}
           height={300}
-          className="~sm:~w-32/56 h-auto"
+          className="~sm:~w-32/56 h-auto lg:~lg:~w-40/72"
           onLoad={() => setIsLoaded(true)}
         />
-        <span className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-full text-white text-center font-bold text-xl sm:~sm:~text-xl/4.5xl leading-none">
+        <span className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-full text-white text-center font-bold text-xl leading-none sm:~sm/lg:~text-xl/4.5xl lg:~lg:~text-2xl/5xl lg:leading-normal">
           {text}
         </span>
       </Link>

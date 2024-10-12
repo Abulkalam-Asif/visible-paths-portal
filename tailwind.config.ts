@@ -16,6 +16,7 @@ const config: Config = {
     extend: {
       screens: {
         xs: "25rem",
+        "2xl": "120rem",
       },
       fontFamily: {
         helvetica: ["Helvetica", "Arial", "sans-serif"],
@@ -25,6 +26,7 @@ const config: Config = {
         survey: "url('/images/surveyBg.webp')",
         surveyResult: "url('/images/surveyResultBg.webp')",
         loanLease: "url('/images/financeloan.webp')",
+        carSelection: "url('/images/carSelectionBg.webp')",
       },
       transitionProperty: {
         "grid-rows": "grid-template-rows",

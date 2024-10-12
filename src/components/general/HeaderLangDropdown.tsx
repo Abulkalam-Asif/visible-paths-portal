@@ -43,7 +43,7 @@ const HeaderLangDropdown = () => {
         ref={dropownRef}
         className="relative bg-[#4D5C69]/60 border-[.25px] rounded-lg border-white/50">
         <button
-          className="text-white font-medium text-sm flex items-center ~gap-2/4 ~px-2/4 py-1.5"
+          className="text-white font-medium text-xs flex items-center ~gap-2/4 px-[0.75em] py-[0.5em] lg:~lg:~text-sm/2xl"
           onClick={() => {
             setIsExpanded(prev => !prev);
           }}>
@@ -52,7 +52,7 @@ const HeaderLangDropdown = () => {
             alt="US Flag"
             width={32}
             height={32}
-            className="w-6 h-6"
+            className="w-6 h-auto lg:~lg:~w-7/12"
           />
           <span>{languages[currentLang].language}</span>
           <FaChevronDown
@@ -71,7 +71,7 @@ const HeaderLangDropdown = () => {
             {Object.keys(languages).map((lang: string) => (
               <button
                 key={lang}
-                className="text-white font-medium text-sm flex items-center ~gap-2/4 px-4 py-2"
+                className="text-white font-medium text-xs flex items-center ~gap-2/4 px-[0.75em] py-[0.5em] lg:~lg:~text-sm/2xl"
                 onClick={() => {
                   setCurrentLang(lang as keyof typeof languages);
                   setIsExpanded(false);
@@ -83,7 +83,7 @@ const HeaderLangDropdown = () => {
                   } Flag`}
                   width={32}
                   height={32}
-                  className="w-4 h-4"
+                  className="w-5 h-auto lg:~lg:~w-6/10"
                 />
                 <span>
                   {languages[lang as keyof typeof languages].language}
