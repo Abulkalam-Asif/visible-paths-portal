@@ -34,6 +34,7 @@ const config: Config = {
       },
       colors: {
         customRed: "#B22234",
+        customCream: "#F6F4F1",
       },
       backdropBlur: {
         financeForm: "10px",

@@ -15,28 +15,15 @@ export type Car = {
 };
 
 const FindYourRideCarsDisplay = () => {
-  const carsPair = carsData.reduce((acc: Car[][], car: Car, index: number) => {
-    if (index % 2 === 0) {
-      acc.push([car]);
-    } else {
-      acc[acc.length - 1].push(car);
-    }
-    return acc;
-  }, []);
-
   return (
     <>
-      <div className="max-w-3xl mr-auto bg-white/80 border-[3px] border-black/60 rounded-2xl backdrop-blur-md text-black px-8 pt-2 pb-4 mt-4 lg:px-10">
+      <div className="w-full mr-auto bg-white/80 border-[3px] border-black/60 rounded-2xl backdrop-blur-md text-black px-8 pt-2 pb-4 mt-4 lg:px-10 lg:w-4/5">
         <h3 className="font-bold text-xs mb-4">
           Showing 1-8 of {carsData.length} listings
         </h3>
-        <div className="custom-scrollbar h-auto overflow-x-auto flex gap-3 pr-2">
-          {carsPair.map((pair: Car[], index: number) => (
-            <div key={index} className="flex flex-col gap-3">
-              {pair.map((car: Car) => (
-                <FindYourRideCarCard key={car.id} {...car} />
-              ))}
-            </div>
+        <div className="custom-scrollbar h-full max-h-[60vh] overflow-y-auto grid grid-cols-1 gap-3 pr-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:max-h-[50vh]">
+          {carsData.map((car: Car) => (
+            <FindYourRideCarCard key={car.id} {...car} />
           ))}
         </div>
       </div>

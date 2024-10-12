@@ -1,29 +1,21 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { FaArrowLeft, FaBars, FaChevronRight } from "react-icons/fa";
-import { FaArrowRightArrowLeft, FaMagnifyingGlass, FaX } from "react-icons/fa6";
+import { FaChevronRight } from "react-icons/fa";
+import { FaArrowRightArrowLeft, FaMagnifyingGlass } from "react-icons/fa6";
 import FindYourRideNavMenu from "./FindYourRideNavMenu";
 import FindYourRideSortByMenu from "./FindYourRideSortByMenu";
 import Image from "next/image";
 import { locationPinIcon } from "@/assets/images";
 
 const FindYourRideNavDes = () => {
-  const menuDivRef = useRef<HTMLDivElement>(null);
   const sortByDivRef = useRef<HTMLDivElement>(null);
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const toggleMenu = () => {
-    setIsMenuOpen(prevState => !prevState);
-  };
   const [isSortByMenuOpen, setIsSortByMenuOpen] = useState(false);
   const toggleSortByMenu = () => {
     setIsSortByMenuOpen(prevState => !prevState);
   };
 
   const handleClickOutside = (e: MouseEvent) => {
-    if (menuDivRef.current && !menuDivRef.current.contains(e.target as Node)) {
-      setIsMenuOpen(false);
-    }
     if (
       sortByDivRef.current &&
       !sortByDivRef.current.contains(e.target as Node)
@@ -39,66 +31,55 @@ const FindYourRideNavDes = () => {
     };
   }, []);
 
-  useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-  }, [isMenuOpen]);
-
   return (
     <>
-      <div className="hidden relative z-10 lg:flex ~lg:~gap-8/20">
-        <div className="flex items-start justify-center gap-4">
-          <button className="bg-white p-2 rounded-xl">
-            <FaArrowLeft className="text-customRed ~lg:~w-4/5 h-auto" />
-          </button>
-          <div className="flex flex-col items-start gap-2">
-            <div className="flex items-center gap-2 px-4 py-1 border border-customRed bg-white/80 backdrop-blur-md rounded-full text-black">
-              <FaMagnifyingGlass className="~/sm:~w-2/3 h-auto" />
-              <input
-                type="search"
-                className="bg-transparent outline-none text-xxxs placeholder:text-black font-semibold"
-                placeholder="Search"
-              />
-            </div>
-            <div ref={sortByDivRef} className="relative">
-              <button
-                onClick={toggleSortByMenu}
-                className="bg-customRed py-1 px-4 rounded-md text-white w-full flex items-center justify-center gap-2">
-                <span className="font-bold text-sm">Sort By:</span>
-                <FaArrowRightArrowLeft className="w-3 h-auto rotate-90" />
-              </button>
-              {isSortByMenuOpen && <FindYourRideSortByMenu />}
-            </div>
+      <div className="hidden relative z-10 lg:flex lg:items-start ~lg:~gap-8/16">
+        <div className="flex flex-col items-start gap-2 lg:~lg:~gap-2.5/5">
+          <div className="flex items-center gap-2 px-4 py-1 border bg-customCream rounded-full text-[#737373] lg:~lg:~px-1.5/3 lg:~lg:~py-1/2 lg:~lg:~w-32/56 lg:~lg:~gap-1/2">
+            <FaMagnifyingGlass className="~/sm:~w-2/3 h-auto lg:~lg:~w-2/4 lg:~lg:~min-w-2/4" />
+            <input
+              type="search"
+              className="flex-1 bg-transparent outline-none text-xxxs placeholder:text-black font-semibold lg:~lg:~text-xxxs/sm"
+              placeholder="Search"
+            />
+          </div>
+          <div ref={sortByDivRef} className="relative">
+            <button
+              onClick={toggleSortByMenu}
+              className="bg-customRed py-[0.3em] px-[1.25em] rounded-md text-white w-full flex items-center justify-center gap-2 text-sm lg:~lg:~text-xs/2xl">
+              <span className="font-bold">Sort By:</span>
+              <FaArrowRightArrowLeft className="w-3 h-auto rotate-90 lg:~lg:~w-3/6" />
+            </button>
+            {isSortByMenuOpen && <FindYourRideSortByMenu />}
           </div>
         </div>
-        <div className="w-full flex items-center gap-2">
-          <div className="w-full bg-customRed skew-x-[25deg] py-2 xl:py-3">
-            <h2 className="font-bold text-white skew-x-[-25deg] flex items-center justify-center ~lg:~gap-2/3 ~lg:~text-xl/2xl">
+        <div className="w-full flex items-center">
+          <div className="w-full bg-customRed skew-x-[30deg] py-2 lg:~lg:~py-3/6">
+            <h2 className="font-bold text-white skew-x-[-30deg] flex items-center justify-center lg:~lg:~gap-2/4 lg:~lg:~text-lg/4xl">
               <span>Used Cars for Sale</span>
-              <FaChevronRight className="text-white ~lg:~w-3/4 h-auto" />
+              <FaChevronRight className="text-whiteh-auto lg:~lg:~w-2/4" />
               <Image
                 src={locationPinIcon}
                 alt="location"
                 width={24}
                 height={24}
-                className="w-4 h-auto"
+                className="w-4 h-auto lg:~lg:~w-3/6"
               />
               <span className="underline">Worcester, MA</span>
             </h2>
           </div>
-          <div className="bg-customRed skew-x-[25deg] px-8">
-            <div ref={menuDivRef} className="relative skew-x-[-25deg] py-2 xl:py-3">
-              <button onClick={toggleMenu} className="bg-white p-2 rounded-xl">
-                {isMenuOpen ? (
-                  <FaX className="text-customRed ~lg:~w-3/4 h-auto" />
-                ) : (
-                  <FaBars className="text-customRed ~lg:~w-3/4 h-auto" />
-                )}
-              </button>
-              {isMenuOpen && <FindYourRideNavMenu />}
+          <div>
+            <svg
+              width="100"
+              height="70"
+              viewBox="0 0 100 70"
+              fill="none"
+              className="w-fit lg:~lg:~h-[3.25rem]/[5.5rem]"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0H124V66H35L0 0Z" fill="#B22234" />
+            </svg>
+            <div className="relative">
+              <FindYourRideNavMenu />
             </div>
           </div>
         </div>
