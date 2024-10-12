@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "name": "2024 Challenger SXT",
+    "name": "2024 Challenger",
     "price": "30000",
     "image": "/temp/car1.png",
     "pros": [
@@ -13,7 +13,7 @@
   },
   {
     "id": "2",
-    "name": "2024 Challenger SXT",
+    "name": "2024 Challenger",
     "price": "30000",
     "image": "/temp/car2.png",
     "pros": [
@@ -25,7 +25,7 @@
   },
   {
     "id": "3",
-    "name": "2024 Challenger SXT",
+    "name": "2024 Challenger",
     "price": "30000",
     "image": "/temp/car3.png",
     "pros": [
