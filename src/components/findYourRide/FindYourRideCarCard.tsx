@@ -29,7 +29,7 @@ const FindYourRideCarCard = ({
   const [isFavourite, setIsFavourite] = useState(false);
   return (
     <>
-      <div className="w-full py-3 border-[0.5px] border-black/60 shadow-lg rounded bg-[#F4F3F0]/70 backdrop-blur-[10px] font-bold">
+      <div className="w-full py-3 border-[0.5px] border-customCream shadow-lg rounded bg-white backdrop-blur-[10px] font-bold">
         <div className="px-3">
           <div className="flex flex-row items-center justify-between">
             <Link

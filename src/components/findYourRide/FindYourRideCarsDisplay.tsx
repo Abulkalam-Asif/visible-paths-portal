@@ -17,7 +17,7 @@ export type Car = {
 const FindYourRideCarsDisplay = () => {
   return (
     <>
-      <div className="w-full mr-auto bg-white/80 border-[3px] border-black/60 rounded-2xl backdrop-blur-md text-black px-8 pt-2 pb-4 mt-4 lg:px-10 lg:w-4/5">
+      <div className="w-full mr-auto bg-customCream rounded-3xl backdrop-blur-md text-black px-8 pt-2 pb-4 mt-4 lg:px-10 lg:w-4/5">
         <h3 className="font-bold text-xs mb-4">
           Showing 1-8 of {carsData.length} listings
         </h3>
