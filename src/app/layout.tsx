@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/general/Header";
+import Footer from "@/components/general/Footer";
 
 export const metadata: Metadata = {
   title: "VisiblePaths",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body className={"font-helvetica"}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
