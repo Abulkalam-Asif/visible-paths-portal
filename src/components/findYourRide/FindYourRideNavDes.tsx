@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
 import { FaArrowRightArrowLeft, FaMagnifyingGlass } from "react-icons/fa6";
 import FindYourRideNavMenu from "./FindYourRideNavMenu";
