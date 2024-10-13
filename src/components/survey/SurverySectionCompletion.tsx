@@ -42,28 +42,33 @@ const SurverySectionCompletion = ({ image }: Props) => {
   };
 
   return (
-    <div className="min-h-screen h-auto bg-main bg-no-repeat bg-top bg-cover -z-10">
+    <div className="min-h-screen h-auto bg-main bg-no-repeat bg-top bg-cover">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="~px-4/12 pb-4 ~/md:~pt-32/40 lg:pt-32">
-        <div className="relative border-white border-2 rounded-[36px] max-w-5xl mx-auto before:backdrop-blur-md bg-[#737475]/50 flex flex-col gap-5 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:inset-0 before:-z-10">
-          <h1 className="text-xl sm:text-3xl w-full max-w-3xl self-center text-center font-bold rounded-md text-white py-4">
-            Unlock Your Financial Personality
-          </h1>
-          <div className="self-center w-full max-w-4xl">
-            <Image
-              src={image}
-              alt="Second Page Road Map"
-              width={900}
-              height={900}
-              className="w-full h-full object-contain"
-            />
-          </div>
-          <div className="flex justify-end w-full">
-            <div>
-              <Navigators handleNext={handleNext} handlePrevious={handlePrev} />
+        className="pb-4 pt-40 lg:~lg:~pt-28/56">
+        <div className="w-full mx-auto ~px-4/8 lg:~lg:~max-w-3xl/7xl">
+          <div className="w-full rounded-[24px] ~px-4/8 bg-[#F6F4F1] flex flex-col gap-4 lg:~lg:~gap-4/8 py-4 lg:~lg:~py-5/10">
+            <h1 className="text-xl lg:~lg:~text-xl/4xl self-center text-center font-bold rounded-md text-black">
+              Unlock Your Financial Personality
+            </h1>
+            <div className="self-center w-full">  
+              <Image
+                src={image}
+                alt="Second Page Road Map"
+                width={900}
+                height={900}
+                className="w-full h-full object-contain p-4"
+              />
+            </div>
+            <div className="flex justify-end w-full">
+              <div>
+                <Navigators
+                  handleNext={handleNext}
+                  handlePrevious={handlePrev}
+                />
+              </div>
             </div>
           </div>
         </div>
