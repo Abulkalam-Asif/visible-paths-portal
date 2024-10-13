@@ -29,7 +29,7 @@ const FindYourRideCarCard = ({
   const [isFavourite, setIsFavourite] = useState(false);
   return (
     <>
-      <div className="w-full py-3 border-[0.5px] border-customCream shadow-lg rounded bg-white backdrop-blur-[10px] font-bold">
+      <div className="w-full py-3 border-[0.5px] border-customCream rounded bg-white backdrop-blur-[10px] font-bold shadow-[0px_0px_10px_0px_rgba(0,0,0,0.15)]">
         <div className="px-3 mb-1">
           <div className="flex flex-row items-center justify-between">
             <Link
@@ -42,7 +42,7 @@ const FindYourRideCarCard = ({
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.8 }}
                 onClick={() => setIsFavourite(false)}>
-                <GoHeartFill className="w-5 h-auto" />
+                <GoHeartFill className="w-5 h-auto text-red-600" />
               </motion.button>
             )}
             {!isFavourite && (
@@ -50,7 +50,7 @@ const FindYourRideCarCard = ({
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.8 }}
                 onClick={() => setIsFavourite(true)}>
-                <GoHeart className="w-5 h-auto" />
+                <GoHeart className="w-5 h-auto text-red-600" />
               </motion.button>
             )}
           </div>
@@ -67,7 +67,7 @@ const FindYourRideCarCard = ({
         </div>
         <hr className="bg-white my-3" />
         <div className="px-2 space-y-2">
-          <div className="flex items-center gap-1 text-xxxs whitespace-nowrap flex-wrap lg:~lg:~text-xxxs/xs">
+          <div className="flex items-center gap-1 text-xxxs whitespace-nowrap flex-wrap lg:~lg:~text-xxxs/xxs">
             <p className="flex items-center gap-1">
               <Image
                 src={mileage2Icon}
@@ -99,7 +99,7 @@ const FindYourRideCarCard = ({
               <span>{driven}</span>
             </p>
           </div>
-          <div className="flex items-center gap-1 text-xxxs lg:~lg:~text-xxxs/xs">
+          <div className="flex items-center gap-1 text-xxxs lg:~lg:~text-xxxs/xxs">
             <FiCheckCircle className="w-3 h-auto" />
             <ul className="flex items-center flex-wrap">
               {properties.map((property, index) => (
@@ -112,7 +112,7 @@ const FindYourRideCarCard = ({
               ))}
             </ul>
           </div>
-          <div className="flex items-center gap-1 text-xxxs lg:~lg:~text-xxxs/xs">
+          <div className="flex items-center gap-1 text-xxxs lg:~lg:~text-xxxs/xxs">
             <Image
               src={locationIcon}
               alt="Location"
@@ -122,7 +122,7 @@ const FindYourRideCarCard = ({
             />
             <span>{seller}</span>
           </div>
-          <div className="flex items-center gap-1 text-xxxs lg:~lg:~text-xxxs/xs">
+          <div className="flex items-center gap-1 text-xxxs lg:~lg:~text-xxxs/xxs">
             <Image
               src={autoCheckIcon}
               alt="AutoCheck"

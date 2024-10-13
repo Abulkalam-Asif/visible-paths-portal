@@ -8,54 +8,25 @@ import Image from "next/image";
 import { locationPinIcon } from "@/assets/images";
 
 const FindYourRideNavDes = () => {
-  const sortByDivRef = useRef<HTMLDivElement>(null);
-
   const [isSortByMenuOpen, setIsSortByMenuOpen] = useState(false);
   const toggleSortByMenu = () => {
     setIsSortByMenuOpen(prevState => !prevState);
   };
 
-  const handleClickOutside = (e: MouseEvent) => {
-    if (
-      sortByDivRef.current &&
-      !sortByDivRef.current.contains(e.target as Node)
-    ) {
-      setIsSortByMenuOpen(false);
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-
   return (
     <>
-      <div className="hidden relative z-10 lg:flex lg:items-start ~lg:~gap-8/16">
-        <div className="flex flex-col items-start gap-2 lg:~lg:~gap-2.5/5">
-          <div className="flex items-center gap-2 px-4 py-1 border bg-customCream rounded-full text-[#737373] lg:~lg:~px-1.5/3 lg:~lg:~py-1/2 lg:~lg:~w-32/56 lg:~lg:~gap-1/2">
-            <FaMagnifyingGlass className="~/sm:~w-2/3 h-auto lg:~lg:~w-2/4 lg:~lg:~min-w-2/4" />
-            <input
-              type="search"
-              className="flex-1 bg-transparent outline-none text-xxxs placeholder:text-black font-semibold lg:~lg:~text-xxxs/sm"
-              placeholder="Search"
-            />
-          </div>
-          <div ref={sortByDivRef} className="relative">
-            <button
-              onClick={toggleSortByMenu}
-              className="bg-customRed py-[0.3em] px-[1.25em] rounded-md text-white w-full flex items-center justify-center gap-2 text-sm lg:~lg:~text-xs/2xl">
-              <span className="font-bold">Sort By:</span>
-              <FaArrowRightArrowLeft className="w-3 h-auto rotate-90 lg:~lg:~w-3/6" />
-            </button>
-            {isSortByMenuOpen && <FindYourRideSortByMenu />}
-          </div>
+      <div className="hidden relative z-10 lg:flex items-start justify-between ~lg:~gap-8/16">
+        <div className="flex items-center border bg-customCream rounded-full text-[#737373] ~lg:~px-1.5/3 ~lg:~py-1/2 ~lg:~w-36/64 ~lg:~gap-1/2">
+          <FaMagnifyingGlass className="~/sm:~w-2/3 h-auto lg:~lg:~w-2/4 lg:~lg:~min-w-2/4" />
+          <input
+            type="search"
+            className="flex-1 bg-transparent outline-none text-xxxs placeholder:text-black font-semibold lg:~lg:~text-xxxs/sm"
+            placeholder="Search"
+          />
         </div>
-        <div className="w-full flex items-center">
-          <div className="w-full bg-customRed skew-x-[30deg] py-2 lg:~lg:~py-3/6">
-            <h2 className="font-bold text-white skew-x-[-30deg] flex items-center justify-center lg:~lg:~gap-2/4 lg:~lg:~text-lg/4xl">
+        <div className="flex items-center">
+          <div className="w-full bg-customRed skew-x-[30deg] ~lg:~px-8/16 ~lg:~py-1/2">
+            <h2 className="font-bold text-white skew-x-[-30deg] flex items-center justify-center ~lg:~gap-3/6 ~lg:~text-xs/2xl">
               <span>Used Cars for Sale</span>
               <FaChevronRight className="text-whiteh-auto lg:~lg:~w-2/4" />
               <Image
@@ -63,27 +34,33 @@ const FindYourRideNavDes = () => {
                 alt="location"
                 width={24}
                 height={24}
-                className="w-4 h-auto lg:~lg:~w-3/6"
+                className="h-auto ~lg:~w-3/6"
               />
               <span className="underline">Worcester, MA</span>
             </h2>
           </div>
-          <div>
+          <div className="relative">
             <svg
-              width="100"
-              height="67"
-              viewBox="0 0 100 67"
+              width="213"
+              height="66"
+              viewBox="0 0 213 66"
               fill="none"
-              className="w-fit lg:~lg:~h-[3.25rem]/[5.5rem]"
+              className="w-fit ~lg:~ml-[-0.25rem]/[-0.5rem] lg:~lg:~h-[1.6rem]/[3.2rem]"
               xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M0 0H124V66H35L0 0Z"
-                fill="#B22234"
-                className="lg:~lg:~h-[3.25rem]/[5.5rem]"
-              />
+              <path d="M0.5 0H213V66H41.5L0.5 0Z" fill="#B22234" />
             </svg>
+            <button
+              onClick={toggleSortByMenu}
+              className="w-full flex items-center justify-center gap-[.5em] whitespace-nowrap absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-white font-bold ~lg:~text-xxs/lg">
+              <span>Sort By:</span>
+              <FaArrowRightArrowLeft className="rotate-90" />
+            </button>
             <div className="relative">
-              <FindYourRideNavMenu />
+              {isSortByMenuOpen ? (
+                <FindYourRideSortByMenu />
+              ) : (
+                <FindYourRideNavMenu />
+              )}
             </div>
           </div>
         </div>

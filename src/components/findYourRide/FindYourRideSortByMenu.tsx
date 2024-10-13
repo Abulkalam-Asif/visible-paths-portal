@@ -55,7 +55,7 @@ const FindYourRideSortByMenu = () => {
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.5 }}
         transition={{ duration: 0.1 }}
-        className="absolute w-max max-h-[50vh] overflow-y-auto top-[calc(100%+.5rem)] right-0 border border-customRed bg-white/80 backdrop-blur-md rounded-md px-2 py-2 flex flex-col">
+        className="absolute w-max max-h-[50vh] overflow-y-auto top-[calc(100%+.5rem)] right-0 border bg-customCream rounded-2xl px-2 py-2 flex flex-col">
         {menuMetadata.map((item, index) => (
           <button
             key={index}
