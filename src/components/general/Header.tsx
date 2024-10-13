@@ -30,6 +30,7 @@ const Header = () => {
                   alt="VisiblePaths"
                   width={120}
                   height={120}
+                  priority={true}
                   className="~/lg:~w-14/20 ~/lg:~h-14/20 lg:~lg:~w-20/40 lg:~lg:~h-20/40"
                 />
               </Link>
