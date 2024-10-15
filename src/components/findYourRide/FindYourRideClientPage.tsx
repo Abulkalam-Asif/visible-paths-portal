@@ -19,12 +19,12 @@ const FindYourRideClientPage = () => {
   return (
     <>
       <section className="min-h-screen h-auto bg-survey bg-no-repeat bg-center bg-cover">
-        <div className="~lg:~max-w-3xl/7xl mx-auto ~px-4/12 ~/md:~pt-32/40 lg:~lg:~pt-[6.5rem]/[13rem] ~lg:~pb-10/16">
+        <div className="max-w-8xl mx-auto pb-12 ~px-4/12 ~/md:~pt-32/40 lg:~lg:~pt-28/44">
           <FindYourRideHeaderMob />
           <FindYourRideNavDes />
           <FindYourRideCarsDisplay />
         </div>
-        <div className="w-full flex justify-end ~lg:~max-w-3xl/7xl mx-auto ~px-4/12 fixed z-[11] ~bottom-4/6 left-1/2 -translate-x-1/2">
+        <div className="w-full flex justify-end max-w-8xl mx-auto ~px-4/12 fixed z-[11] ~bottom-4/6 left-1/2 -translate-x-1/2">
           <button
             onClick={toggleChat}
             className="bg-customRed p-3 rounded-full">
