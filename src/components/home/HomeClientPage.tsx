@@ -12,7 +12,7 @@ const HomeClientPage = () => {
   return (
     <>
       <section className="min-h-screen h-auto bg-main bg-no-repeat bg-top bg-cover">
-        <div className="~lg:~max-w-3xl/7xl mx-auto ~px-4/8 pb-4 ~/md:~pt-36/40 lg:~lg:~pt-32/64 lg:~lg:~pb-6/10">
+        <div className="max-w-7xl w-4/5 mx-auto ~px-4/8 pb-12 ~/md:~pt-36/40 lg:~lg:~pt-32/64">
           <div className="w-full flex flex-col items-center gap-4 sm:~sm:~gap-4/20 sm:flex-row sm:justify-evenly">
             <HomeLink
               text="Explore Finance"
@@ -32,7 +32,7 @@ const HomeClientPage = () => {
               alt="Car"
               width={500}
               height={500}
-              className="w-3/4 h-auto mx-auto"
+              className="h-auto mx-auto sm:w-3/4"
             />
           </div>
         </div>

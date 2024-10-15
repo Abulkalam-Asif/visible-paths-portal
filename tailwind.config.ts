@@ -16,7 +16,7 @@ const config: Config = {
     extend: {
       screens: {
         xs: "25rem",
-        "2xl": "120rem",
+        "2xl": "90rem",
       },
       fontFamily: {
         helvetica: ["Helvetica", "Arial", "sans-serif"],
@@ -35,6 +35,9 @@ const config: Config = {
       colors: {
         customRed: "#B22234",
         customCream: "#F6F4F1",
+      },
+      maxWidth: {
+        "8xl": "90rem",
       },
       backdropBlur: {
         financeForm: "10px",

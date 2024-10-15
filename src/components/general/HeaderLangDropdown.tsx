@@ -43,7 +43,7 @@ const HeaderLangDropdown = () => {
         ref={dropownRef}
         className="relative bg-[#4D5C69]/60 border-[.25px] rounded-lg border-white/50">
         <button
-          className="text-white font-semibold text-xs flex items-center ~gap-2/4 px-[0.75em] py-[0.5em] lg:~lg:~text-sm/2xl"
+          className="text-white font text-xs flex items-center ~gap-2/4 px-[0.75em] py-[0.5em] lg:~lg:~text-sm/2xl"
           onClick={() => {
             setIsExpanded(prev => !prev);
           }}>
@@ -71,7 +71,7 @@ const HeaderLangDropdown = () => {
             {Object.keys(languages).map((lang: string) => (
               <button
                 key={lang}
-                className="text-white font-semibold text-xs flex items-center ~gap-2/4 px-[0.75em] py-[0.5em] lg:~lg:~text-sm/2xl"
+                className="text-white font text-xs flex items-center ~gap-2/4 px-[0.75em] py-[0.5em] lg:~lg:~text-sm/2xl"
                 onClick={() => {
                   setCurrentLang(lang as keyof typeof languages);
                   setIsExpanded(false);
