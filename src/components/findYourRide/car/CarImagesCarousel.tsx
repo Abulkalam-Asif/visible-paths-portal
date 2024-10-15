@@ -22,30 +22,12 @@ const CarImagesCarousel = ({ images }: CarImagesCarouselProps) => {
     sliderRef.current?.slickNext();
   };
 
-  const CustomPrevArrow = (props: any) => (
-    <button
-      className="custom-arrows prev-arrow"
-      onClick={props.onClick}
-      style={{ display: "none" }}
-    />
-  );
-
-  const CustomNextArrow = (props: any) => (
-    <button
-      className="custom-arrows next-arrow"
-      onClick={props.onClick}
-      style={{ display: "none" }}
-    />
-  );
-
   const sliderSettings = {
     dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    prevArrow: <CustomPrevArrow />,
-    nextArrow: <CustomNextArrow />,
     responsive: [
       {
         breakpoint: 640,
