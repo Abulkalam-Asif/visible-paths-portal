@@ -27,6 +27,12 @@ export { default as engine2Icon } from "./findYourRide/engine2.svg";
 export { default as drivenIcon } from "./findYourRide/driven.svg";
 export { default as autoCheckIcon } from "./findYourRide/autoCheck.webp";
 
+export { default as mileageRedIcon } from "./findYourRide/car/mileageRed.svg";
+export { default as engineRedIcon } from "./findYourRide/car/engineRed.svg";
+export { default as drivenRedIcon } from "./findYourRide/car/drivenRed.svg";
+export { default as vinIcon } from "./findYourRide/car/vin.png";
+export { default as locationRedIcon } from "./findYourRide/car/locationRed.svg";
+
 // Find your ride - Compare
 export { default as compareCarBgImg } from "./findYourRide/compare/compareCarBg.svg";
 export { default as prosIcon } from "./findYourRide/compare/pros.png";

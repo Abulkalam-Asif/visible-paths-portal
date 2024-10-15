@@ -27,6 +27,7 @@ const config: Config = {
         surveyResult: "url('/images/surveyResultBg.webp')",
         loanLease: "url('/images/financeloan.webp')",
         carSelection: "url('/images/carSelectionBg.webp')",
+        car: "url('/images/carBg.webp')",
       },
       transitionProperty: {
         "grid-rows": "grid-template-rows",
