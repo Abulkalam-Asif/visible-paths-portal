@@ -11,17 +11,10 @@ type Props = {
   question: string;
   name: string;
   formData: FormDataType;
-  setFormData: React.Dispatch<React.SetStateAction<FormDataType>>;
   inputHandler: (name: string, value: string) => void;
 };
 
-const BooleanFormComp = ({
-  question,
-  formData,
-  setFormData,
-  name,
-  inputHandler,
-}: Props) => {
+const BooleanFormComp = ({ question, formData, name, inputHandler }: Props) => {
   const handleRadioChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     inputHandler(e.target.name, e.target.value);
   };

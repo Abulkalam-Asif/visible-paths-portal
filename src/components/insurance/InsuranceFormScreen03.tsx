@@ -20,7 +20,6 @@ const InsuranceFormScreen03 = () => {
   const router = useRouter();
   const params = useSearchParams();
   const myParams = new URLSearchParams(params);
-  const [currentPage, setCurrentPage] = useState(params.get("page") || "");
 
   const formDataInputHandler = (name: string, value: string) => {
     setFormData({ ...formData, [name]: value });

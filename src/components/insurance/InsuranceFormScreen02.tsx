@@ -67,7 +67,6 @@ const InsuranceFormScreen02 = () => {
           <BooleanFormComp
             question="Have you had auto insurance in the past 30 days?"
             formData={formData}
-            setFormData={setFormData}
             name="pastInsurance"
             inputHandler={formDataInputHandler}
           />
@@ -87,14 +86,12 @@ const InsuranceFormScreen02 = () => {
           <BooleanFormComp
             question="I also use this vehicle for ridesharing"
             formData={formData}
-            setFormData={setFormData}
             name="usage"
             inputHandler={formDataInputHandler}
           />
           <BooleanFormComp
             question="Have you had any driving accidents in the last 3 years?"
             formData={formData}
-            setFormData={setFormData}
             name="accidents"
             inputHandler={formDataInputHandler}
           />

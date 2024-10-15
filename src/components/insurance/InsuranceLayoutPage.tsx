@@ -1,5 +1,5 @@
 "use client";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import React, { useEffect } from "react";
 import StepNodeComp from "../finance/loan-lease/StepNodeComp";
 import LineComp from "../finance/loan-lease/LineComp";
@@ -26,7 +26,6 @@ const stepJson = [
 ];
 
 const InsuranceLayoutPage = ({ children }: Props) => {
-  const router = useRouter();
   const params = useSearchParams();
   const myParams = new URLSearchParams(params);
 
