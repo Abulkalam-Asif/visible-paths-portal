@@ -33,7 +33,7 @@ const FormInputBox = ({
 
   return (
     <>
-      <div className={`${className} flex flex-col gap-2.5 lg:~lg:~gap-2.5/7`}>
+      <div className={`${className} flex flex-col gap-2.5 lg:~lg:~gap-2.5`}>
         <label htmlFor={idHtmlFor} className="font-bold lg:~lg:~text-md/lg">
           {label} {required && <span className="text-accent1">*</span>}
         </label>

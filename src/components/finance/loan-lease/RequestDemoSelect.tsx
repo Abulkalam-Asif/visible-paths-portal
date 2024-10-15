@@ -29,7 +29,7 @@ const RequestDemoSelect = ({
 
   return (
     <>
-      <div className={`${className} flex flex-col gap-2.5 lg:~lg:~gap-2.5/7`}>
+      <div className={`${className} flex flex-col gap-2.5 `}>
         <label
           htmlFor={idHtmlFor}
           className="font-bold text-black lg:~lg:~text-md/lg">

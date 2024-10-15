@@ -30,9 +30,11 @@ export default function LoanLeaseLayoutInnerComp() {
   if (currentPage === "3") {
     return <FormCompScreen03 />;
   }
+
   if (currentPage === "4") {
     return <FormCompScreen04 />;
   }
+
   if (currentPage === "5") {
     return <FormCompSummaryScreen />;
   }

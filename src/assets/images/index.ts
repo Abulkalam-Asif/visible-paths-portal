@@ -55,3 +55,7 @@ export { default as LoanLeaseResult } from "../finance/loanLeaseResultCenterImg.
 
 //cash
 export { default as monthlyPaymentBg } from "../cash/monthlyPaymentBg.svg";
+
+
+//insurance
+export { default as insuranceFirstPageIcon } from "../insurance/insurancePageCarImg.webp";
