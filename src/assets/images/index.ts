@@ -32,6 +32,7 @@ export { default as engineRedIcon } from "./findYourRide/car/engineRed.svg";
 export { default as drivenRedIcon } from "./findYourRide/car/drivenRed.svg";
 export { default as vinIcon } from "./findYourRide/car/vin.png";
 export { default as locationRedIcon } from "./findYourRide/car/locationRed.svg";
+export { default as padlockcon } from "./findYourRide/car/padlock.png";
 
 // Find your ride - Compare
 export { default as compareCarBgImg } from "./findYourRide/compare/compareCarBg.svg";
