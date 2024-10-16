@@ -43,8 +43,7 @@ const InsuranceFormScreen03 = () => {
 
   const onNext = () => {
     saveFormDataToLocalStorage();
-    myParams.delete("page");
-    myParams.set("summary", "true");
+    myParams.set("page", "summary");
     router.push("/insurance?" + myParams.toString());
   };
 

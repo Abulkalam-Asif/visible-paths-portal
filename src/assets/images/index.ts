@@ -66,3 +66,7 @@ export { default as monthlyPaymentBg } from "../cash/monthlyPaymentBg.svg";
 
 //insurance
 export { default as insuranceFirstPageIcon } from "../insurance/insurancePageCarImg.webp";
+export { default as insuranceSummaryPageIcon } from "../insurance/insuranceSummaryIcon.svg";
+export {default as starReviewIcon} from "../insurance/insuranceSummaryStarComp.svg";
+export {default as PriceIcon} from "../insurance/insuranceSummaryPricetag.svg";
+export {default as insurancePlanFirstCompIcon} from "../insurance/insurancePlanFirstCompIcon.svg"

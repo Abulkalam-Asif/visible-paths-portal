@@ -28,6 +28,7 @@ const config: Config = {
         loanLease: "url('/images/financeloan.webp')",
         carSelection: "url('/images/carSelectionBg.webp')",
         car: "url('/images/carBg.webp')",
+        insuranceSumary: `url(/images/insuranceSummaryPageIcon.webp)`,
       },
       transitionProperty: {
         "grid-rows": "grid-template-rows",
