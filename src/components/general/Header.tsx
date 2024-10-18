@@ -14,6 +14,8 @@ const Header = () => {
     heading = "Welcome to VisiblePaths";
   } else if (pathname.startsWith("/find-your-ride")) {
     heading = "Find Your Perfect Ride";
+  } else if (pathname.startsWith("/payment")) {
+    heading = "VisiblePaths";
   } else {
     heading = "Welcome to VisiblePaths";
   }
