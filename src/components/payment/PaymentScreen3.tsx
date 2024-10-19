@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-import { FaCheckCircle, FaMinusCircle } from "react-icons/fa";
 
 
 const PaymentScreen3 = () => {
@@ -17,7 +16,7 @@ const PaymentScreen3 = () => {
           VisiblePaths Leads You to a Perfect Ride!
         </h2>
         <div className="w-full bg-customCream rounded-3xl px-4 py-6 font-bold flex flex-col items-center text-center gap-6 md:~md:~px-4/8 md:py-8 md:~md:~gap-6/12">
-        
+
         </div>
         <div className="flex flex-col ~gap-1/3">
           <Link
