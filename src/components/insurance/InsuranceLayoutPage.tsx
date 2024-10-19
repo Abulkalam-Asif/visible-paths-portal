@@ -94,8 +94,8 @@ const InsuranceLayoutPage = ({ children }: Props) => {
             <Image
               src={insuranceFirstPageIcon}
               alt="firstPage"
-              width={150}
-              height={50}
+              width={700}
+              height={700}
               className="w-full h-auto"
             />
           </div>
