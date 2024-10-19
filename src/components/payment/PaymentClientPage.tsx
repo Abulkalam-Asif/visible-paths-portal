@@ -1,11 +1,11 @@
 "use client";
-import { useRouter, useSearchParams } from "next/navigation";
-import React, { useState } from "react";
+import { useSearchParams } from "next/navigation";
+import React from "react";
 import PaymentScreen1 from "./PaymentScreen1";
 import PaymentScreen2 from "./PaymentScreen2";
+import PaymentScreen3 from "./PaymentScreen3";
 
 const PaymentClientPage = () => {
-  const router = useRouter();
   const searchParams = useSearchParams();
   const currentScreen = searchParams.get("screen") || "1";
   return (
@@ -13,6 +13,7 @@ const PaymentClientPage = () => {
       <section className="min-h-screen h-auto bg-main bg-no-repeat bg-top bg-cover">
         {currentScreen === "1" && <PaymentScreen1 />}
         {currentScreen === "2" && <PaymentScreen2 />}
+        {currentScreen === "3" && <PaymentScreen3 />}
       </section>
     </>
   );
